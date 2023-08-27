@@ -1,7 +1,7 @@
 # React + TypeScript + Vite
 
 ## About
-Portfolio-react ibn the makin'!
+Portfolio-react in the makin'!
 
 
 ## Demo
