@@ -1,0 +1,28 @@
+@import '../style/variables.scss';
+
+ul {
+    border: 1px solid purple;
+    list-style: none;
+}
+
+.menu-slide-enter {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  
+  .menu-slide-enter-active {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .menu-slide-exit {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  
+  .menu-slide-exit-active {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 300ms, transform 300ms;
+  }
