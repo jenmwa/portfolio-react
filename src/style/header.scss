@@ -1,7 +1,5 @@
 @import '../style/variables.scss';
 
-
-
 header {
   left: 0;
   top: 0;
@@ -31,7 +29,12 @@ header {
     position: absolute;
     left: 0;
     top: 5.9rem;
-    background-color: $grey100;
+    background: rgba(255, 255, 255, 0.5);
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 
   p {
@@ -45,6 +48,11 @@ ul {
   padding: 0;
 
   list-style: none;
+
+  li {
+    margin-bottom: 1rem;
+    ;
+  }
 }
 
 .menu-slide-enter {

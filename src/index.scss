@@ -36,19 +36,35 @@ footer {
   padding: 1rem;
 }
 
+h1 {
+  font-family: $FontHeading;
+  text-transform: uppercase;
+  font-size: 4.5rem;
+}
+
 h2 {
   font-family: $FontHeading;
   text-transform: uppercase;
   font-size: 4rem;
 }
 
+p {
+  font-family: $FontParagraph;
+  font-size: 1rem;
+}
+
+span {
+  font-family: $FontParagraph;;
+  }
+
 a {
-  font-weight: 500;
-  color: $primary1;
+  font-family: $FontParagraph;
+  font-weight: bold;
+  color: $secondary3;
   text-decoration: inherit;
 }
 a:hover {
-  color: $primary2;
+  color: $grey700;
 }
 
 button {
