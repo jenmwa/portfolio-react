@@ -8,21 +8,17 @@ import { useClickOutside } from '../hooks/useClickOutside';
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const menuRef = useRef<HTMLUListElement | null>(null);
 
-  useClickOutside({
-    ref: menuRef, onClickOutside: () =>
-      setIsOpen(false)
-  })
 
-  const toggleMenu = (e: React.SyntheticEvent) => {
-    e.stopPropagation();
+
+  const toggleMenu = () => {
     setIsOpen(!isOpen)
+    console.log('menu isOpen: ', !isOpen)
   }
 
   const handleKeyEnter = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter') {
-      toggleMenu(e);
+      toggleMenu();
     }
   }
 
@@ -30,10 +26,36 @@ export const Navigation = () => {
     setIsOpen(false);
   };
 
+  const menuRef = useRef<HTMLDivElement | null>(null);
+
+  useClickOutside({
+    menuRef: menuRef,
+    setIsOpen: setIsOpen,
+    onClickOutside: () => {
+      closeMenu();
+      console.log('click outside');
+    },});
+
+  // useEffect(() => {
+  //   function handleClickOutside(event: MouseEvent): void {
+  //     if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+  //       setIsOpen(false);
+  //       console.log('click outside');
+  //     }
+  //   }
+  //   document.addEventListener('mousedown', handleClickOutside);
+
+  //   return () => {
+  //     document.removeEventListener('mousedown', handleClickOutside);
+  //   };
+  // });
+
+
+
   return <>
-    <header>
-      <div className='logo-container'>
-        <img src='/public/JW-logo.png' width={50} />
+    <header ref={menuRef}>
+      <div className='logo-container' >
+        <img src='/JW-logo.png' width={50} />
       </div>
       <BurgerMeny
         toggleMenu={toggleMenu}
@@ -48,7 +70,7 @@ export const Navigation = () => {
         unmountOnExit
       >
         <div className='menu-div' >
-          <ul className="menu-list" ref={menuRef}>
+          <ul className="menu-list" >
             <li><Link to='/' onClick={closeMenu}>Home</Link></li>
             <li><Link to='/about' onClick={closeMenu}>About</Link></li>
             <li><Link to='/portfolio' onClick={closeMenu}>Portfolio</Link></li>

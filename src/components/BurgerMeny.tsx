@@ -11,10 +11,14 @@ export const BurgerMeny = ({ toggleMenu, handleKeyEnter, isOpen }: toggleMenupro
 
   const menuClassName = isOpen ? 'nav-icon open' : 'nav-icon';
 
+  const handleMenuClick = (e: React.MouseEvent) => {
+    toggleMenu(e);
+  };
+
   return <>
     <div
       className={menuClassName}
-      onClick={(e) => toggleMenu(e)}
+      onClick={handleMenuClick}
       onKeyDown={(e) => handleKeyEnter(e)}
       tabIndex={0}>
       <span></span>
