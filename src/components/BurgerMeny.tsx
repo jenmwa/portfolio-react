@@ -2,29 +2,19 @@
 import '../style/burgermenu.scss';
 
 interface toggleMenuprops {
-  toggleMenu: () => void;
+  toggleMenu: (e: React.SyntheticEvent) => void;
   isOpen: boolean;
+  handleKeyEnter: (e:  React.KeyboardEvent) => void;
 }
 
-export const BurgerMeny = ({ toggleMenu, isOpen }: toggleMenuprops) => {
+export const BurgerMeny = ({ toggleMenu, handleKeyEnter, isOpen }: toggleMenuprops) => {
 
-
-  // const toggleMenu = () => {
-  //   setIsOpen(!isOpen)
-  // }
-
-  const handleKeyEnter = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter') {
-      toggleMenu();
-    }
-  }
-
-  const menuClassName = isOpen ? 'nav-icon open' : 'nav-icon'
+  const menuClassName = isOpen ? 'nav-icon open' : 'nav-icon';
 
   return <>
     <div
       className={menuClassName}
-      onClick={toggleMenu}
+      onClick={(e) => toggleMenu(e)}
       onKeyDown={(e) => handleKeyEnter(e)}
       tabIndex={0}>
       <span></span>
