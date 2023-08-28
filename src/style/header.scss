@@ -1,28 +1,70 @@
 @import '../style/variables.scss';
 
+
+
+header {
+  left: 0;
+  top: 0;
+  border: 1px solid $secondary1;
+  width: 100vw;
+  padding-inline: 1rem;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3);
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+
+  .menu-div {
+    width: 92vw;
+    text-align: center;
+    outline: 1px solid $accent1;
+    margin: 0;
+    padding: 1rem;
+    position: absolute;
+    left: 0;
+    top: 5.9rem;
+    background-color: $grey100;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 ul {
-    border: 1px solid purple;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .menu-slide-enter {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  
-  .menu-slide-enter-active {
-    opacity: 1;
-    transform: translateY(0%);
-    transition: opacity 300ms, transform 300ms;
-  }
-  
-  .menu-slide-exit {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-  
-  .menu-slide-exit-active {
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: opacity 300ms, transform 300ms;
-  }
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.menu-slide-enter-active {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.menu-slide-exit {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.menu-slide-exit-active {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 300ms, transform 300ms;
+}

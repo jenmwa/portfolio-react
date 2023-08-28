@@ -4,7 +4,8 @@
   width: 55px;
   height: 40px;
   position: relative;
-  margin: 50px auto;
+  margin-right: 2rem;
+  // margin: 50px auto;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -21,7 +22,7 @@
   position: absolute;
   height: 4px;
   width: 100%;
-  background: $primary1;
+  background: $grey700;
   border-radius: 9px;
   opacity: 1;
   left: 0;
