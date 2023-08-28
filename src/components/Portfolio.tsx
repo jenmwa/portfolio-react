@@ -3,6 +3,6 @@
 export const Portfolio = () => {
 
     return <>
-      <p>Portfolio</p>
+      <h2>Portfolio</h2>
     </>
   }

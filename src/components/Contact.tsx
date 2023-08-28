@@ -4,6 +4,7 @@
 export const Contact = () => {
 
     return <>
-      <p>Contact</p>
+      <h2>Contact</h2>
+      <button>hey hey hallo</button>
     </>
   }

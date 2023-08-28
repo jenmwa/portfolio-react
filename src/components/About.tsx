@@ -3,6 +3,6 @@
 export const About = () => {
 
     return <>
-      <p>Om</p>
+      <h2>About</h2>
     </>
   }

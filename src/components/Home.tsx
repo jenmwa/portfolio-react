@@ -3,6 +3,6 @@
 export const Home = () => {
 
   return <>
-    <p>Hem</p>
+    <h2>Home</h2>
   </>
 }
