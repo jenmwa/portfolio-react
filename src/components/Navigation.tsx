@@ -16,8 +16,9 @@ interface IClickProps {
 export const Navigation = ({click}: IClickProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [theme, setTheme] = useState<ITheme>(themes.dark);
+  const [logo, setLogo] = useState('/JW-logo.png')
 
-
+  const menuRef = useRef<HTMLDivElement | null>(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen)
@@ -34,8 +35,6 @@ export const Navigation = ({click}: IClickProps) => {
     setIsOpen(false);
   };
 
-  const menuRef = useRef<HTMLDivElement | null>(null);
-
   useClickOutside({
     menuRef: menuRef,
     setIsOpen: setIsOpen,
@@ -46,14 +45,20 @@ export const Navigation = ({click}: IClickProps) => {
   });
 
   const handleThemeToggle = () => {
-    setTheme(theme === themes.light ? themes.dark : themes.light);
+    if (theme === themes.light){
+      setTheme(themes.dark);
+      setLogo('/JW-logo.png')
+    } else {
+      setTheme(themes.light);
+      setLogo('/JW-logo-light.png')
+    }
     click();
   };
 
   return <>
     <header ref={menuRef}>
       <div className='logo-container'><Link to='/'>
-        <img src='/JW-logo.png' width={50} />
+        <img src={logo} width={50} />
       </Link>
       </div>
       <BurgerMeny
