@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom"
 import { Footer } from "./Footer"
 import { Navigation } from "./Navigation"
-import { darkModeContext } from "../contexts/darkModeContext"
 import { useReducer } from "react"
 import { DarkModereducer } from "./reducers/DarkModeReducer"
+import { darkModeContext } from "../contexts/DarkModeContext"
 
 export const Layout = () => {
   const [darkMode, dispatch] = useReducer(DarkModereducer, false);
