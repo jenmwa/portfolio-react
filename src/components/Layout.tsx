@@ -5,6 +5,7 @@ import { useReducer } from "react"
 import { DarkModereducer } from "./reducers/DarkModeReducer"
 import { darkModeContext } from "../contexts/DarkModeContext"
 
+
 export const Layout = () => {
   const [darkMode, dispatch] = useReducer(DarkModereducer, false);
 
