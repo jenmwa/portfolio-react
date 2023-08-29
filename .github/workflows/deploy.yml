@@ -25,7 +25,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: 'https://jenmwa.github.io/react-todo-app/'
+      url: 'https://jenmwa.github.io/portfolio-react/'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
