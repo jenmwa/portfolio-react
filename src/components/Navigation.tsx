@@ -56,7 +56,7 @@ export const Navigation = ({click}: IClickProps) => {
   };
 
   return <>
-    <header ref={menuRef}>
+    <header className='header' ref={menuRef}>
       <div className='logo-container'><Link to='/'>
         <img src={logo} width={50} />
       </Link>

@@ -18,17 +18,17 @@ export const Layout = () => {
 
   return <>
     <darkModeContext.Provider value={{ darkMode, toggleDarkMode }}>
-      <div className={darkMode ? 'darkMode' : ''}>
-        <header>
-          <Navigation click={toggleDarkMode}></Navigation>
+      {/* <div className={darkMode ? 'darkMode' : ''}> */}
+        <header className={darkMode ? 'darkMode' : ''}>
+          <Navigation click={toggleDarkMode} ></Navigation>
         </header>
-        <main>
+        <main className={darkMode ? 'darkMode' : ''}>
           <Outlet></Outlet>
         </main>
-        <footer>
+        <footer className={darkMode ? 'darkMode' : ''}>
           <Footer></Footer>
         </footer>
-      </div>
+      {/* </div> */}
     </darkModeContext.Provider>
   </>
 }

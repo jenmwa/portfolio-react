@@ -1,17 +1,9 @@
 @import '../style/variables.scss';
 
-.darkMode {
-  h1, h2 {
-    color: $grey100;
-  }
-
-  main {
-    background: black;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), linear-gradient(137deg, rgba(244, 198, 234, 1) 0%, rgba(143, 132, 238, 1) 34%, rgba(110, 131, 232, 1) 48%, rgba(6, 177, 171, 1) 100%);
-  }
-
-  header {
-    background: rgba(19, 19, 19, 0.5);
+  header.darkMode {
+    .header {
+    background: rgba(19, 19, 19, 0.7);
+    // background: rgba(0, 0, 0, 0.5);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -26,18 +18,29 @@
         color: $grey100;
       }
     }
-  }
 
-  div {
-    color: $grey100;
+    .nav-icon span {
+      background: $grey100;
+    }
   }
+}
+
 
   button {
     background-color: $grey100;
     color: $grey700;
   }
 
-  .nav-icon span {
-    background: $grey100;
+
+main.darkMode {
+  background: black;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), linear-gradient(137deg, rgba(244, 198, 234, 1) 0%, rgba(143, 132, 238, 1) 34%, rgba(110, 131, 232, 1) 48%, rgba(6, 177, 171, 1) 100%);
+
+  h1, h2, p, span {
+    color: $grey100;
   }
+}
+
+footer.darkMode {
+  background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), $grey700;
 }
