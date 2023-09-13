@@ -1,0 +1,40 @@
+.portfolio--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.portfolio-img--container {
+  border: 1px solid red;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 1rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+h3 {
+  margin-bottom: 0;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.portfolio--language {
+  background-color: whitesmoke;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.portfolio--readMore {
+  margin-bottom: 2rem;
+}
