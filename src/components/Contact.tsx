@@ -1,10 +1,10 @@
-
-
+import { Button } from "./styled/Buttons";
 
 export const Contact = () => {
-
-    return <>
+  return (
+    <>
       <h2>Contact</h2>
-      <button>Button in Contact</button>
+      <Button>Button in Contact</Button>
     </>
-  }
+  );
+};
