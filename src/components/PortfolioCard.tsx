@@ -1,7 +1,21 @@
 import { Article } from "./styled/Articles";
 import "../style/portfolio.scss";
+import { portfolioProjects } from "../portfolioProjects";
+import { useNavigate } from "react-router-dom";
 
 export const PortfolioCard = () => {
+  const navigate = useNavigate();
+  const projects = portfolioProjects;
+
+  const handleClick = (id: number) => {
+    navigate("/portfolio/" + id);
+  };
+
+  const html = projects.map((project) => (
+    <span key={project.id} onClick={() => handleClick(project.id)}>
+      {project.title}
+    </span>
+  ));
   return (
     <>
       <Article className="portfolio--container">
@@ -9,6 +23,7 @@ export const PortfolioCard = () => {
           <div className="portfolio-img--container">
             <img src="/placeholder.webp"></img>
           </div>
+          {html}
           <span>KATEGORI</span>
           <h3>TITEL</h3>
           <p>

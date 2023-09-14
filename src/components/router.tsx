@@ -4,32 +4,35 @@ import { Home } from "./Home";
 import { About } from "./About";
 import { Portfolio } from "./Portfolio";
 import { Contact } from "./Contact";
-
+import { Project } from "./Project";
 
 // export const router = createBrowserRouter([
-  export const router = createHashRouter([
+export const router = createHashRouter([
   {
-    path: '/',
+    path: "/",
     element: <Layout></Layout>,
     children: [
       {
-        path: '/',
+        path: "/",
         element: <Home></Home>,
         index: true,
       },
       {
-        path: '/about',
-        element: <About></About>
+        path: "/about",
+        element: <About></About>,
       },
       {
-        path: '/portfolio',
-        element: <Portfolio></Portfolio>
+        path: "/portfolio",
+        element: <Portfolio></Portfolio>,
       },
       {
-        path: '/contact',
-        element: <Contact></Contact>
-      }
-    ]
-  }
-
+        path: "/portfolio/:id",
+        element: <Project></Project>,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>,
+      },
+    ],
+  },
 ]);
