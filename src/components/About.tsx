@@ -1,3 +1,4 @@
+import { Button } from "./styled/Buttons";
 import { ColorDiv } from "./styled/Divs";
 import { H2 } from "./styled/Headings";
 import { Section } from "./styled/Sections";
@@ -7,7 +8,7 @@ export const About = () => {
     <>
       <Section>
         <H2>About</H2>
-        <button>Button in About</button>
+        <Button>Button in About</Button>
         <ColorDiv></ColorDiv>
       </Section>
     </>

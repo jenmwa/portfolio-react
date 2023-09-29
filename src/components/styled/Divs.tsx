@@ -13,3 +13,12 @@ export const ColorDiv = styled.div`
     rgba(6, 177, 171, 1) 100%
   );
 `;
+
+export const Flex50percent = styled.div`
+  @media (min-width: 768px) {
+    margin-top: 0.9rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+`;
