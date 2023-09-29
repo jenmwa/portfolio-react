@@ -16,9 +16,23 @@ export const ColorDiv = styled.div`
 
 export const Flex50percent = styled.div`
   @media (min-width: 768px) {
-    margin-top: 0.9rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
+  }
+`;
+
+export const TextContainer = styled.div`
+  position: absolute;
+  z-index: 10;
+  top: 70%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: 768px) {
+    position: relative;
+    top: 2rem;
+    left: 2rem;
+    transform: translate(0, 0);
   }
 `;

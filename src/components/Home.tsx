@@ -10,7 +10,6 @@ export const Home = () => {
   return (
     <>
       <Hero></Hero>
-
       <About></About>
       <Portfolio></Portfolio>
       <Contact></Contact>

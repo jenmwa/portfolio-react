@@ -1,5 +1,12 @@
 import styled from "styled-components";
-import { FontHeading, grey100, grey700 } from "./variables";
+import {
+  FontHeading,
+  accent2,
+  grey100,
+  grey700,
+  grey800,
+  primary2,
+} from "./variables";
 
 export const Button = styled.button`
   border-radius: 24px 0 24px 0;
@@ -13,12 +20,31 @@ export const Button = styled.button`
   color: ${grey100};
   cursor: pointer;
   transition: border-color 0.25s;
+  display: block;
 
-  /* button:hover {
-    border-color: #646cff;
+  &:hover {
+    border-color: ${primary2};
+    box-shadow: ${accent2} 1px 1px 2px;
+    background-color: ${grey800};
   }
-  button:focus,
-  button:focus-visible {
+  &:focus,
+  &:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
-  } */
+  }
+`;
+
+export const HeroButton = styled(Button)`
+  border: 1px solid ${grey100};
+  box-shadow: ${grey100} 1px 1px 2px;
+  margin-top: 4rem;
+
+  &:hover {
+    border-color: ${primary2};
+    box-shadow: ${accent2} 1px 1px 2px;
+    font-weight: 800;
+  }
+  &:focus,
+  &:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
 `;

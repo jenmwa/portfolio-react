@@ -1,21 +1,24 @@
-import { Button } from "./styled/Buttons";
-import { Flex50percent } from "./styled/Divs";
-import { H1 } from "./styled/Headings";
-import { ImageContainerFull, ImageFull } from "./styled/Image";
+import { HeroButton } from "./styled/Buttons";
+import { Flex50percent, TextContainer } from "./styled/Divs";
+import { H1Light } from "./styled/Headings";
+import { ImageContainerFull, ImageFull, ImageOverlay } from "./styled/Image";
+import { SpanHeader } from "./styled/Texts";
 import jenny from "/jenny-waller-cv-sv.jpg";
 
 export const Hero = () => {
   return (
     <>
       <Flex50percent>
-        <div className="hero-text">
-          <H1>hi there</H1>
-          <span>I'm Jenny</span>
-          <span>Front End Developer in the makin'</span>
-          <Button>My CTA Button in Hero</Button>
-        </div>
+        <TextContainer>
+          <H1Light>Hej Hej hallååå!</H1Light>
+          <SpanHeader>Kul att just DU hittat hit!</SpanHeader>
+          <SpanHeader>Jenny heter jag,</SpanHeader>
+          <SpanHeader>och detta är mitt digitala krypin online</SpanHeader>
+          <HeroButton>My CTA Button in Hero</HeroButton>
+        </TextContainer>
         <ImageContainerFull>
           <ImageFull src={jenny} alt="en tjej som ler mot kameran"></ImageFull>
+          <ImageOverlay></ImageOverlay>
         </ImageContainerFull>
       </Flex50percent>
     </>

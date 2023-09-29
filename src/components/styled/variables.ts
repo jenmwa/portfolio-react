@@ -18,3 +18,4 @@ export const grey100 = '#F8F8F8';
 export const grey300 = '#DEE1EF';
 export const grey500 = '#8D92AB';
 export const grey700 = '#2A2E45';
+export const grey800 = '#151826';
