@@ -94,7 +94,7 @@ Error generating stack: `+i.message+`
 `,o1=Be(Dl)`
   border: 1px solid ${$o};
   box-shadow: ${$o} 1px 1px 2px;
-  margin-top: 4rem;
+  margin-top: 2rem;
 
   &:hover {
     border-color: ${jh};
@@ -104,6 +104,11 @@ Error generating stack: `+i.message+`
   &:focus,
   &:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 2rem;
+    max-width: fit-content;
   }
 `,i1=Be.div`
   width: 350px;
@@ -126,15 +131,29 @@ Error generating stack: `+i.message+`
 `,a1=Be.div`
   position: absolute;
   z-index: 10;
-  top: 70%;
-  left: 40%;
+  /* top: 80%;
+  left: 40%; */
+  top: 65%;
+  left: 200px;
   transform: translate(-50%, -50%);
+  width: 340px;
 
   @media (min-width: 768px) {
     position: relative;
-    top: 2rem;
+    top: 10rem;
     left: 2rem;
     transform: translate(0, 0);
+    width: 400px;
+  }
+
+  @media (min-width: 1024px) {
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 6rem;
+    /* left: 5rem; */
   }
 `,u1=Be.h1`
   font-family: ${Ds};
@@ -155,6 +174,12 @@ Error generating stack: `+i.message+`
   @media (min-width: 768px) {
     color: ${Fo};
     text-shadow: none;
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 6.5rem;
+    margin-top: 0;
   }
 `,zh=Be.section`
   min-height: 100dvh;
@@ -172,7 +197,8 @@ Error generating stack: `+i.message+`
   -webkit-backdrop-filter: blur(5px);
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 `;const f1=[{id:1,title:"Projekt 1"},{id:2,title:"Projekt 2"}],d1=()=>{const e=rh(),t=f1,n=o=>{e("/portfolio/"+o)},r=t.map(o=>C.jsx("span",{onClick:()=>n(o.id),children:o.title},o.id));return C.jsx(C.Fragment,{children:C.jsxs(c1,{className:"portfolio--container",children:[C.jsxs("div",{className:"portfolio--upper-section",children:[C.jsx("div",{className:"portfolio-img--container",children:C.jsx("img",{src:"/placeholder.webp"})}),r,C.jsx("span",{children:"KATEGORI"}),C.jsx("h3",{children:"TITEL"}),C.jsxs("p",{children:["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."," "]})]}),C.jsxs("div",{className:"portfolio--down-section",children:[C.jsx("div",{className:"portfolio--language",children:C.jsx("div",{children:C.jsx("span",{children:"Language"})})}),C.jsx("div",{className:"portfolio--readMore",children:C.jsx("a",{href:"/",children:"Learn More"})})]})]})})},$h=()=>{const{id:e}=d0(),t=Number(e);return console.log(t),C.jsxs(C.Fragment,{children:[C.jsx(Oh,{children:"Portfolio"}),C.jsx(Dl,{children:"Button in Portfolio"}),C.jsx("br",{}),C.jsx("br",{}),C.jsx("br",{}),C.jsx(d1,{})]})},p1=Be.div`
-  margin-top: 0.9rem;
+  /* margin-top: 0.9rem; */
+  margin-top: -5.9rem;
   position: relative;
   height: 100vh;
   width: 100%;
@@ -193,7 +219,7 @@ Error generating stack: `+i.message+`
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
 
   @media (min-width: 768px) {
     display: none;
@@ -205,5 +231,7 @@ Error generating stack: `+i.message+`
 
   @media (min-width: 768px) {
     color: ${Fo};
+    text-shadow: none;
+    font-size: 1.2rem;
   }
-`,g1="/portfolio-react/jenny-waller-cv-sv.jpg",v1=()=>C.jsx(C.Fragment,{children:C.jsxs(l1,{children:[C.jsxs(a1,{children:[C.jsx(s1,{children:"Hej Hej hallååå!"}),C.jsx(xa,{children:"Kul att just DU hittat hit!"}),C.jsx(xa,{children:"Jenny heter jag,"}),C.jsx(xa,{children:"och detta är mitt digitala krypin online"}),C.jsx(o1,{children:"My CTA Button in Hero"})]}),C.jsxs(p1,{children:[C.jsx(h1,{src:g1,alt:"en tjej som ler mot kameran"}),C.jsx(m1,{})]})]})}),Fh=()=>C.jsxs(C.Fragment,{children:[C.jsx("h2",{children:"Contact"}),C.jsx(Dl,{children:"Button in Contact"})]}),y1=()=>(console.log("Hi there!"),C.jsxs(C.Fragment,{children:[C.jsx(v1,{}),C.jsx(Ih,{}),C.jsx($h,{}),C.jsx(Fh,{})]})),w1=()=>C.jsx(C.Fragment,{children:C.jsx(zh,{children:"Projectpage"})}),x1=O0([{path:"/",element:C.jsx(b0,{}),children:[{path:"/",element:C.jsx(y1,{}),index:!0},{path:"/about",element:C.jsx(Ih,{})},{path:"/portfolio",element:C.jsx($h,{})},{path:"/portfolio/:id",element:C.jsx(w1,{})},{path:"/contact",element:C.jsx(Fh,{})}]}]);function S1(){return C.jsx(C.Fragment,{children:C.jsx(R0,{router:x1})})}Sa.createRoot(document.getElementById("root")).render(C.jsx(Qe.StrictMode,{children:C.jsx(S1,{})}));
+`,g1="/portfolio-react/jenny-waller-cv-sv.jpg",v1=()=>C.jsx(C.Fragment,{children:C.jsxs(l1,{children:[C.jsxs(a1,{children:[C.jsx(s1,{children:"Hej Hej hallååå!"}),C.jsx(xa,{children:"Kul att just DU hittat hit!"}),C.jsx(xa,{children:"Jenny heter jag,"}),C.jsx(xa,{children:"och detta är min nya portfolio kodad i React"}),C.jsx(o1,{children:"My CTA Button in Hero"})]}),C.jsxs(p1,{children:[C.jsx(h1,{src:g1,alt:"en tjej som ler mot kameran"}),C.jsx(m1,{})]})]})}),Fh=()=>C.jsxs(C.Fragment,{children:[C.jsx("h2",{children:"Contact"}),C.jsx(Dl,{children:"Button in Contact"})]}),y1=()=>(console.log("Hi there!"),C.jsxs(C.Fragment,{children:[C.jsx(v1,{}),C.jsx(Ih,{}),C.jsx($h,{}),C.jsx(Fh,{})]})),w1=()=>C.jsx(C.Fragment,{children:C.jsx(zh,{children:"Projectpage"})}),x1=O0([{path:"/",element:C.jsx(b0,{}),children:[{path:"/",element:C.jsx(y1,{}),index:!0},{path:"/about",element:C.jsx(Ih,{})},{path:"/portfolio",element:C.jsx($h,{})},{path:"/portfolio/:id",element:C.jsx(w1,{})},{path:"/contact",element:C.jsx(Fh,{})}]}]);function S1(){return C.jsx(C.Fragment,{children:C.jsx(R0,{router:x1})})}Sa.createRoot(document.getElementById("root")).render(C.jsx(Qe.StrictMode,{children:C.jsx(S1,{})}));
