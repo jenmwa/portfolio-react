@@ -26,5 +26,11 @@ export const H1Light = styled(H1).attrs({
   @media (min-width: 768px) {
     color: ${grey700};
     text-shadow: none;
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 6.5rem;
+    margin-top: 0;
   }
 `;

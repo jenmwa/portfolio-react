@@ -36,7 +36,7 @@ export const Button = styled.button`
 export const HeroButton = styled(Button)`
   border: 1px solid ${grey100};
   box-shadow: ${grey100} 1px 1px 2px;
-  margin-top: 4rem;
+  margin-top: 2rem;
 
   &:hover {
     border-color: ${primary2};
@@ -46,5 +46,10 @@ export const HeroButton = styled(Button)`
   &:focus,
   &:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 2rem;
+    max-width: fit-content;
   }
 `;

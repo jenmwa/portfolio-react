@@ -13,7 +13,7 @@ export const Hero = () => {
           <H1Light>Hej Hej hallååå!</H1Light>
           <SpanHeader>Kul att just DU hittat hit!</SpanHeader>
           <SpanHeader>Jenny heter jag,</SpanHeader>
-          <SpanHeader>och detta är mitt digitala krypin online</SpanHeader>
+          <SpanHeader>och detta är min nya portfolio kodad i React</SpanHeader>
           <HeroButton>My CTA Button in Hero</HeroButton>
         </TextContainer>
         <ImageContainerFull>

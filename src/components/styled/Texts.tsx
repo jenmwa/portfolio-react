@@ -8,5 +8,7 @@ export const SpanHeader = styled.span`
 
   @media (min-width: 768px) {
     color: ${grey700};
+    text-shadow: none;
+    font-size: 1.2rem;
   }
 `;

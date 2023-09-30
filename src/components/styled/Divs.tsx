@@ -25,14 +25,28 @@ export const Flex50percent = styled.div`
 export const TextContainer = styled.div`
   position: absolute;
   z-index: 10;
-  top: 70%;
-  left: 40%;
+  /* top: 80%;
+  left: 40%; */
+  top: 65%;
+  left: 200px;
   transform: translate(-50%, -50%);
+  width: 340px;
 
   @media (min-width: 768px) {
     position: relative;
-    top: 2rem;
+    top: 10rem;
     left: 2rem;
     transform: translate(0, 0);
+    width: 400px;
+  }
+
+  @media (min-width: 1024px) {
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 6rem;
+    /* left: 5rem; */
   }
 `;
