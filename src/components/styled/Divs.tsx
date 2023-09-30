@@ -2,8 +2,8 @@ import styled from "styled-components";
 import placeholder from "/placeholder.webp";
 
 export const ColorDiv = styled.div`
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
   border-radius: 125px 0 125px 0;
   background: rgb(244, 198, 234);
   background: linear-gradient(
@@ -13,7 +13,7 @@ export const ColorDiv = styled.div`
     rgba(110, 131, 232, 1) 48%,
     rgba(6, 177, 171, 1) 100%
   );
-
+  margin-right: 2rem;
   margin-top: 4rem;
 
   @media (min-width: 768px) {
@@ -23,22 +23,24 @@ export const ColorDiv = styled.div`
 `;
 
 export const PlacementDiv = styled.div`
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
   border-radius: 125px 0 125px 0;
   background-image: url(${placeholder});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  top: -2rem;
-  left: 2rem;
+  margin-left: 2rem;
+  /* margin-top: -2rem; */
+  /* top: -2rem;
+  left: 2rem; */
 
   @media (min-width: 768px) {
     width: 325px;
     height: 325px;
-    top: 2rem;
-    left: 2rem;
+    /* top: 2rem;
+    left: 2rem; */
   }
 `;
 
@@ -52,6 +54,10 @@ export const Flex50percent = styled.div`
 
 export const ContainerDiv = styled.div`
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
 
   @media (min-width: 768px) {
     margin: 8rem auto 0 auto;
