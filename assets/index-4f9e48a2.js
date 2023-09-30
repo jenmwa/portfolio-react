@@ -110,7 +110,7 @@ Error generating stack: `+i.message+`
     margin-top: 2rem;
     max-width: fit-content;
   }
-`,i1=_e.div`
+`,i1="/portfolio-react/placeholder.webp",l1=_e.div`
   width: 350px;
   height: 350px;
   border-radius: 125px 0 125px 0;
@@ -129,11 +129,11 @@ Error generating stack: `+i.message+`
     width: 325px;
     height: 325px;
   }
-`,l1=_e.div`
+`,a1=_e.div`
   width: 350px;
   height: 350px;
   border-radius: 125px 0 125px 0;
-  background-image: url("/placeholder.webp");
+  background-image: url(${i1});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -147,19 +147,19 @@ Error generating stack: `+i.message+`
     top: 2rem;
     left: 2rem;
   }
-`,a1=_e.div`
+`,u1=_e.div`
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* gap: 50px; */
   }
-`,u1=_e.div`
+`,s1=_e.div`
   position: relative;
 
   @media (min-width: 768px) {
     margin: 8rem auto 0 auto;
   }
-`,s1=_e.div`
+`,c1=_e.div`
   position: absolute;
   z-index: 10;
   /* top: 80%;
@@ -187,7 +187,7 @@ Error generating stack: `+i.message+`
     width: 400px;
     /* left: 5rem; */
   }
-`,c1=_e.div`
+`,f1=_e.div`
   @media (min-width: 768px) {
     width: 50%;
     p {
@@ -215,7 +215,7 @@ Error generating stack: `+i.message+`
       width: 450px;
     }
   }
-`,f1=_e.h1`
+`,d1=_e.h1`
   font-family: ${js};
   text-transform: uppercase;
   font-size: 4.5rem;
@@ -224,7 +224,7 @@ Error generating stack: `+i.message+`
   font-family: ${js};
   text-transform: uppercase;
   font-size: 4rem;
-`,d1=_e(f1).attrs({className:"breakpoint_small"})`
+`,p1=_e(d1).attrs({className:"breakpoint_small"})`
   color: ${$o};
   text-shadow: ${Fo} 0 0 10px;
   font-size: 4.7rem;
@@ -259,7 +259,7 @@ Error generating stack: `+i.message+`
   @media (min-width: 1024px) {
     padding-left: 5rem;
   }
-`,Ih=()=>{const e=Ps(),t=()=>{e("/about")};return E.jsx(E.Fragment,{children:E.jsxs(zh,{children:[E.jsxs(c1,{children:[E.jsx(Oh,{children:"Om Jenny"}),E.jsx("p",{children:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}),E.jsx(Dl,{style:{marginTop:"2rem"},onClick:t,children:"Learn More About Jenny"})]}),E.jsxs(u1,{children:[E.jsx(i1,{}),E.jsx(l1,{})]})]})})},p1=_e.article`
+`,Ih=()=>{const e=Ps(),t=()=>{e("/about")};return E.jsx(E.Fragment,{children:E.jsxs(zh,{children:[E.jsxs(f1,{children:[E.jsx(Oh,{children:"Om Jenny"}),E.jsx("p",{children:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}),E.jsx(Dl,{style:{marginTop:"2rem"},onClick:t,children:"Learn More About Jenny"})]}),E.jsxs(s1,{children:[E.jsx(l1,{}),E.jsx(a1,{})]})]})})},h1=_e.article`
   margin: 2rem 1rem;
   border-radius: 125px 0 125px 0;
   width: 350px;
@@ -270,14 +270,14 @@ Error generating stack: `+i.message+`
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-`;const h1=[{id:1,title:"Projekt 1"},{id:2,title:"Projekt 2"}],m1=()=>{const e=Ps(),t=h1,n=o=>{e("/portfolio/"+o)},r=t.map(o=>E.jsx("span",{onClick:()=>n(o.id),children:o.title},o.id));return E.jsx(E.Fragment,{children:E.jsxs(p1,{className:"portfolio--container",children:[E.jsxs("div",{className:"portfolio--upper-section",children:[E.jsx("div",{className:"portfolio-img--container",children:E.jsx("img",{src:"/placeholder.webp"})}),r,E.jsx("span",{children:"KATEGORI"}),E.jsx("h3",{children:"TITEL"}),E.jsxs("p",{children:["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."," "]})]}),E.jsxs("div",{className:"portfolio--down-section",children:[E.jsx("div",{className:"portfolio--language",children:E.jsx("div",{children:E.jsx("span",{children:"Language"})})}),E.jsx("div",{className:"portfolio--readMore",children:E.jsx("a",{href:"/",children:"Learn More"})})]})]})})},$h=()=>{const{id:e}=d0(),t=Number(e);return console.log(t),E.jsxs(E.Fragment,{children:[E.jsx(Oh,{children:"Portfolio"}),E.jsx(Dl,{children:"Button in Portfolio"}),E.jsx("br",{}),E.jsx("br",{}),E.jsx("br",{}),E.jsx(m1,{})]})},g1=_e.div`
+`;const m1=[{id:1,title:"Projekt 1"},{id:2,title:"Projekt 2"}],g1=()=>{const e=Ps(),t=m1,n=o=>{e("/portfolio/"+o)},r=t.map(o=>E.jsx("span",{onClick:()=>n(o.id),children:o.title},o.id));return E.jsx(E.Fragment,{children:E.jsxs(h1,{className:"portfolio--container",children:[E.jsxs("div",{className:"portfolio--upper-section",children:[E.jsx("div",{className:"portfolio-img--container",children:E.jsx("img",{src:"/placeholder.webp"})}),r,E.jsx("span",{children:"KATEGORI"}),E.jsx("h3",{children:"TITEL"}),E.jsxs("p",{children:["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."," "]})]}),E.jsxs("div",{className:"portfolio--down-section",children:[E.jsx("div",{className:"portfolio--language",children:E.jsx("div",{children:E.jsx("span",{children:"Language"})})}),E.jsx("div",{className:"portfolio--readMore",children:E.jsx("a",{href:"/",children:"Learn More"})})]})]})})},$h=()=>{const{id:e}=d0(),t=Number(e);return console.log(t),E.jsxs(E.Fragment,{children:[E.jsx(Oh,{children:"Portfolio"}),E.jsx(Dl,{children:"Button in Portfolio"}),E.jsx("br",{}),E.jsx("br",{}),E.jsx("br",{}),E.jsx(g1,{})]})},v1=_e.div`
   /* margin-top: 0.9rem; */
   margin-top: -5.9rem;
   position: relative;
   height: 100vh;
   width: 100%;
   /* display: inline-block; */
-`,v1=_e.img`
+`,y1=_e.img`
   width: 100%;
   height: 100%;
   display: block;
@@ -287,7 +287,7 @@ Error generating stack: `+i.message+`
   @media (min-width: 768px) {
     object-position: top center;
   }
-`,y1=_e.div`
+`,w1=_e.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -308,4 +308,4 @@ Error generating stack: `+i.message+`
     text-shadow: none;
     font-size: 1.2rem;
   }
-`,w1="/portfolio-react/jenny-waller-cv-sv.jpg",x1=()=>E.jsx(E.Fragment,{children:E.jsxs(a1,{children:[E.jsxs(s1,{children:[E.jsx(d1,{children:"Hej Hej hallååå!"}),E.jsx(xa,{children:"Kul att just DU hittat hit!"}),E.jsx(xa,{children:"Jenny heter jag,"}),E.jsx(xa,{children:"och detta är min nya portfolio kodad i React"}),E.jsx(o1,{children:"My CTA Button in Hero"})]}),E.jsxs(g1,{children:[E.jsx(v1,{src:w1,alt:"en tjej som ler mot kameran"}),E.jsx(y1,{})]})]})}),Fh=()=>E.jsxs(E.Fragment,{children:[E.jsx("h2",{children:"Contact"}),E.jsx(Dl,{children:"Button in Contact"})]}),S1=()=>(console.log("Hi there!"),E.jsxs(E.Fragment,{children:[E.jsx(x1,{}),E.jsx(Ih,{}),E.jsx($h,{}),E.jsx(Fh,{})]})),k1=()=>E.jsx(E.Fragment,{children:E.jsx(zh,{children:"Projectpage"})}),E1=O0([{path:"/",element:E.jsx(b0,{}),children:[{path:"/",element:E.jsx(S1,{}),index:!0},{path:"/about",element:E.jsx(Ih,{})},{path:"/portfolio",element:E.jsx($h,{})},{path:"/portfolio/:id",element:E.jsx(k1,{})},{path:"/contact",element:E.jsx(Fh,{})}]}]);function C1(){return E.jsx(E.Fragment,{children:E.jsx(P0,{router:E1})})}Sa.createRoot(document.getElementById("root")).render(E.jsx(Qe.StrictMode,{children:E.jsx(C1,{})}));
+`,x1="/portfolio-react/jenny-waller-cv-sv.jpg",S1=()=>E.jsx(E.Fragment,{children:E.jsxs(u1,{children:[E.jsxs(c1,{children:[E.jsx(p1,{children:"Hej Hej hallååå!"}),E.jsx(xa,{children:"Kul att just DU hittat hit!"}),E.jsx(xa,{children:"Jenny heter jag,"}),E.jsx(xa,{children:"och detta är min nya portfolio kodad i React"}),E.jsx(o1,{children:"My CTA Button in Hero"})]}),E.jsxs(v1,{children:[E.jsx(y1,{src:x1,alt:"en tjej som ler mot kameran"}),E.jsx(w1,{})]})]})}),Fh=()=>E.jsxs(E.Fragment,{children:[E.jsx("h2",{children:"Contact"}),E.jsx(Dl,{children:"Button in Contact"})]}),k1=()=>(console.log("Hi there!"),E.jsxs(E.Fragment,{children:[E.jsx(S1,{}),E.jsx(Ih,{}),E.jsx($h,{}),E.jsx(Fh,{})]})),E1=()=>E.jsx(E.Fragment,{children:E.jsx(zh,{children:"Projectpage"})}),C1=O0([{path:"/",element:E.jsx(b0,{}),children:[{path:"/",element:E.jsx(k1,{}),index:!0},{path:"/about",element:E.jsx(Ih,{})},{path:"/portfolio",element:E.jsx($h,{})},{path:"/portfolio/:id",element:E.jsx(E1,{})},{path:"/contact",element:E.jsx(Fh,{})}]}]);function P1(){return E.jsx(E.Fragment,{children:E.jsx(P0,{router:C1})})}Sa.createRoot(document.getElementById("root")).render(E.jsx(Qe.StrictMode,{children:E.jsx(P1,{})}));
