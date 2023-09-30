@@ -111,8 +111,8 @@ Error generating stack: `+i.message+`
     max-width: fit-content;
   }
 `,a1="/portfolio-react/placeholder.webp",u1=_e.div`
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
   border-radius: 125px 0 125px 0;
   background: rgb(244, 198, 234);
   background: linear-gradient(
@@ -122,7 +122,7 @@ Error generating stack: `+i.message+`
     rgba(110, 131, 232, 1) 48%,
     rgba(6, 177, 171, 1) 100%
   );
-
+  margin-right: 2rem;
   margin-top: 4rem;
 
   @media (min-width: 768px) {
@@ -130,22 +130,24 @@ Error generating stack: `+i.message+`
     height: 325px;
   }
 `,s1=_e.div`
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
   border-radius: 125px 0 125px 0;
   background-image: url(${a1});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  top: -2rem;
-  left: 2rem;
+  margin-left: 2rem;
+  /* margin-top: -2rem; */
+  /* top: -2rem;
+  left: 2rem; */
 
   @media (min-width: 768px) {
     width: 325px;
     height: 325px;
-    top: 2rem;
-    left: 2rem;
+    /* top: 2rem;
+    left: 2rem; */
   }
 `,c1=_e.div`
   @media (min-width: 768px) {
@@ -155,6 +157,10 @@ Error generating stack: `+i.message+`
   }
 `,f1=_e.div`
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
 
   @media (min-width: 768px) {
     margin: 8rem auto 0 auto;
