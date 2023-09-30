@@ -1,7 +1,9 @@
 import { useParams } from "react-router-dom";
-import { PortfolioCard } from "./PortfolioCard";
+// import { PortfolioCard } from "./PortfolioCard";
 import { Button } from "./styled/Buttons";
 import { H2 } from "./styled/Headings";
+import { ImgContainer } from "./ImgContainer";
+import "../style/portfolio.scss";
 
 export const Portfolio = () => {
   const { id } = useParams();
@@ -10,13 +12,17 @@ export const Portfolio = () => {
   console.log(idToNumber);
   return (
     <>
-      <H2>Portfolio</H2>
-      <Button>Button in Portfolio</Button>
-      <br></br>
-      <br></br>
-      <br></br>
-
-      <PortfolioCard></PortfolioCard>
+      <section className="portfolio-section">
+        <H2>Portfolio</H2>
+        <div className="portfolio-wrapper">
+          <ImgContainer></ImgContainer>
+          <ImgContainer></ImgContainer>
+          <ImgContainer></ImgContainer>
+          <ImgContainer></ImgContainer>
+        </div>
+        <Button>Se alla projekt</Button>
+        {/* <PortfolioCard></PortfolioCard> */}
+      </section>
     </>
   );
 };

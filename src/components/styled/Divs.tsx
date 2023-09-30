@@ -1,5 +1,18 @@
 import styled from "styled-components";
 import placeholder from "/placeholder.webp";
+import { grey100, grey700 } from "./variables";
+
+export const ContainerDiv = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+
+  @media (min-width: 768px) {
+    margin: 8rem auto 0 auto;
+  }
+`;
 
 export const ColorDiv = styled.div`
   width: 320px;
@@ -19,6 +32,15 @@ export const ColorDiv = styled.div`
   @media (min-width: 768px) {
     width: 325px;
     height: 325px;
+  }
+`;
+
+export const BlueDiv = styled(ColorDiv)`
+  background: ${grey700};
+
+  @media (min-width: 768px) {
+    width: 320px;
+    height: 320px;
   }
 `;
 
@@ -44,23 +66,15 @@ export const PlacementDiv = styled.div`
   }
 `;
 
+export const WhiteDiv = styled(PlacementDiv)`
+  background: ${grey100};
+`;
+
 export const Flex50percent = styled.div`
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* gap: 50px; */
-  }
-`;
-
-export const ContainerDiv = styled.div`
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-
-  @media (min-width: 768px) {
-    margin: 8rem auto 0 auto;
   }
 `;
 
