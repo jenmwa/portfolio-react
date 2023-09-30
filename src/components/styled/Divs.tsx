@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import placeholder from "/placeholder.webp";
 
 export const ColorDiv = styled.div`
   width: 350px;
@@ -25,7 +26,7 @@ export const PlacementDiv = styled.div`
   width: 350px;
   height: 350px;
   border-radius: 125px 0 125px 0;
-  background-image: url("/placeholder.webp");
+  background-image: url(${placeholder});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
