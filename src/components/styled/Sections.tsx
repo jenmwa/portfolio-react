@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { grey100, grey700 } from "./variables";
 
 export const Section = styled.section`
   min-height: 80dvh;
@@ -12,6 +13,21 @@ export const Section = styled.section`
     flex-direction: row-reverse;
     gap: 4rem;
     /* grid-template-columns: 1fr 1fr; */
+    /* gap: 50px; */
+  }
+
+  @media (min-width: 1024px) {
+    padding-left: 5rem;
+  }
+`;
+
+export const SectionDark = styled(Section)`
+  background-color: ${grey700};
+  color: ${grey100};
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
     /* gap: 50px; */
   }
 

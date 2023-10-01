@@ -39,8 +39,8 @@ export const BlueDiv = styled(ColorDiv)`
   background: ${grey700};
 
   @media (min-width: 768px) {
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
   }
 `;
 
@@ -68,6 +68,13 @@ export const PlacementDiv = styled.div`
 
 export const WhiteDiv = styled(PlacementDiv)`
   background: ${grey100};
+  width: 300px;
+  height: 300px;
+`;
+
+export const WhiteDivBig = styled(WhiteDiv)`
+  width: 325px;
+  height: 325px;
 `;
 
 export const Flex50percent = styled.div`

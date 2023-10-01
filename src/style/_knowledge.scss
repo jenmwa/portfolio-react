@@ -1,0 +1,10 @@
+.knowledge-cv-container {
+  @media (min-width: 768px) {
+    margin-left: -4rem;
+    margin-top: 0;
+  }
+  @media (min-width: 1024px) {
+    // margin-left: 0rem;
+    margin-top: 0;
+  }
+}
