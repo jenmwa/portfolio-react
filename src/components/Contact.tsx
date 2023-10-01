@@ -11,7 +11,7 @@ export const Contact = () => {
           color: "#F8F8F8",
         }}
       >
-        <H2 style={{ color: "whitesmoke" }}>Contact</H2>
+        <H2 style={{ color: "whitesmoke" }}>Kontakt</H2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
