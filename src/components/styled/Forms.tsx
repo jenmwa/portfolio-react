@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FontHeading, grey100 } from "./variables";
+import { FontHeading, grey100, grey700 } from "./variables";
 
 export const Form = styled.form`
   width: 350px;
@@ -17,7 +17,7 @@ export const Label = styled.label`
 
 export const StyledInput = styled.input`
   font-family: ${FontHeading};
-  color: ${grey100};
+  color: ${grey700};
   font-size: 1rem;
   width: 100%;
   margin: 0;
@@ -30,6 +30,7 @@ export const StyledInput = styled.input`
     width: 100%;
     margin: 0;
     background-color: ${grey100};
+    color: ${grey700};
     padding: 1rem;
     border: none;
     outline: none;
