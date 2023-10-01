@@ -8,8 +8,7 @@ export const Project = () => {
   console.log(idToNumber);
   return (
     <>
-      <Section>Projectpage {id}</Section>
-      {id}
+      <Section>Projectpage {id} </Section>
     </>
   );
 };

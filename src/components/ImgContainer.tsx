@@ -15,6 +15,14 @@ export const ImgContainer = ({ handleClick }: IImgContainerProps) => {
       id: 2,
       title: "Projekt 2",
     },
+    {
+      id: 3,
+      title: "Projekt 3",
+    },
+    {
+      id: 4,
+      title: "Projekt 4",
+    },
   ];
 
   const html = portfolioProjects.map((project) => (
