@@ -60,22 +60,22 @@ ul {
 
 .menu-slide-enter {
   opacity: 0;
-  transform: translateY(-100%);
+  transform: translateX(-100%);
 }
 
 .menu-slide-enter-active {
   opacity: 1;
-  transform: translateY(0%);
+  transform: translateX(0);
   transition: opacity 300ms, transform 300ms;
 }
 
 .menu-slide-exit {
   opacity: 1;
-  transform: translateY(0%);
+  transform: translateX(0);
 }
 
 .menu-slide-exit-active {
   opacity: 0;
-  transform: translateY(-100%);
+  transform: translateX(-100%);
   transition: opacity 300ms, transform 300ms;
 }

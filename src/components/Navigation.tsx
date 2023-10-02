@@ -19,6 +19,7 @@ export const Navigation = ({ click }: IClickProps) => {
   const [logo, setLogo] = useState(logoJW);
 
   const menuRef = useRef<HTMLDivElement | null>(null);
+  // const nodeRef = useRef(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -71,12 +72,18 @@ export const Navigation = ({ click }: IClickProps) => {
 
         <CSSTransition
           in={isOpen}
+          // nodeRef={nodeRef}
           timeout={300}
-          classNames="menu-slide"
+          classNames={{
+            enter: "menu-slide-enter",
+            enterActive: "menu-slide-enter-active",
+            exit: "menu-slide-exit",
+            exitActive: "menu-slide-exit-active",
+          }}
           unmountOnExit
         >
           <ThemeContext.Provider value={theme}>
-            <div className={`menu-div`}>
+            <div className={"menu-div"}>
               <ul className="menu-list">
                 <li>
                   <Link to="/" onClick={closeMenu}>
