@@ -1,22 +1,17 @@
-import { useNavigate } from "react-router-dom";
-import { Button } from "./styled/Buttons";
+import { SpanText } from "./styled/Texts";
 import {
-  ColorDiv,
-  ContainerDiv,
   PContainer,
+  ContainerDiv,
+  ColorDiv,
   PlacementDiv,
 } from "./styled/Divs";
 import { H2 } from "./styled/Headings";
 import { Section } from "./styled/Sections";
-import { SpanText } from "./styled/Texts";
+import { Button } from "./styled/Buttons";
 
-export const About = () => {
-  const navigate = useNavigate();
-  // const emailJenny = () => {
-  //   (window.location.href = "mailto:hej@jenwaller.se"), "_blank";
-  // };
-  const goToAbout = () => {
-    navigate("/about");
+export const AboutJenny = () => {
+  const emailJenny = () => {
+    (window.location.href = "mailto:hej@jenwaller.se"), "_blank";
   };
 
   return (
@@ -36,8 +31,8 @@ export const About = () => {
           <p>När jag inte är vid datorn så</p>
           <SpanText>WANT TO TALK? LET'S CONNECT!</SpanText>
           linkedIn symbol logoGithub logo logoemail symbol logo
-          <Button style={{ marginTop: "2rem" }} onClick={goToAbout}>
-            Mer om jenny
+          <Button style={{ marginTop: "2rem" }} onClick={emailJenny}>
+            Kontakta mig
           </Button>
         </PContainer>
         <ContainerDiv>

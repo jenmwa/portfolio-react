@@ -1,10 +1,10 @@
 import { createHashRouter } from "react-router-dom";
 import { Layout } from "./Layout";
 import { Home } from "./Home";
-import { About } from "./About";
 import { Portfolio } from "./Portfolio";
 import { Contact } from "./Contact";
 import { Project } from "./Project";
+import { AboutJenny } from "./AboutJenny";
 
 // export const router = createBrowserRouter([
 export const router = createHashRouter([
@@ -19,7 +19,7 @@ export const router = createHashRouter([
       },
       {
         path: "/about",
-        element: <About></About>,
+        element: <AboutJenny></AboutJenny>,
       },
       {
         path: "/portfolio",
