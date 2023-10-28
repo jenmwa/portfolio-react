@@ -8,7 +8,7 @@ import {
 } from "./styled/Divs";
 import { H2 } from "./styled/Headings";
 import { Section } from "./styled/Sections";
-import { SpanText } from "./styled/Texts";
+import { SpanTextDark } from "./styled/Texts";
 
 export const About = () => {
   const navigate = useNavigate();
@@ -33,7 +33,7 @@ export const About = () => {
             company where I will be a part of a team and where I could continue
             grow in my role as a Front-End Developer.
           </p>
-          <SpanText>WANT TO TALK? LET'S CONNECT!</SpanText>
+          <SpanTextDark>WANT TO TALK? LET'S CONNECT!</SpanTextDark>
           linkedIn symbol logoGithub logo logoemail symbol logo
           <Button style={{ marginTop: "2rem" }} onClick={goToAbout}>
             Mer om jenny

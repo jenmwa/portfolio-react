@@ -1,4 +1,4 @@
-import { SpanText } from "./styled/Texts";
+import { SpanTextDark } from "./styled/Texts";
 import {
   PContainer,
   ContainerDiv,
@@ -29,7 +29,7 @@ export const AboutJenny = () => {
             grow in my role as a Front-End developer.
           </p>
           <p>När jag inte är vid datorn så</p>
-          <SpanText>WANT TO TALK? LET'S CONNECT!</SpanText>
+          <SpanTextDark>WANT TO TALK? LET'S CONNECT!</SpanTextDark>
           linkedIn symbol logoGithub logo logoemail symbol logo
           <Button style={{ marginTop: "2rem" }} onClick={emailJenny}>
             Kontakta mig

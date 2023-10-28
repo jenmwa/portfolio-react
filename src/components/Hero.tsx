@@ -3,7 +3,12 @@ import { HeroButton } from "./styled/Buttons";
 import { Flex50percent, TextContainer } from "./styled/Divs";
 import { H1Light } from "./styled/Headings";
 import { ImageContainerFull, ImageFull, ImageOverlay } from "./styled/Image";
-import { SpanHeader, SpanHeading2, SpanIcon, SpanText } from "./styled/Texts";
+import {
+  SpanHeader,
+  SpanHeading2,
+  SpanIcon,
+  SpanTextLight,
+} from "./styled/Texts";
 import jenny from "/jenny-waller-cv-sv.jpg";
 
 export const Hero = () => {
@@ -32,7 +37,7 @@ export const Hero = () => {
           >
             home_pin
           </SpanIcon>
-          <SpanText style={{ display: "inline" }}>Karlstad</SpanText>
+          <SpanTextLight style={{ display: "inline" }}>Karlstad</SpanTextLight>
           <HeroButton onClick={goToAbout}>
             <span className="material-symbols-outlined">mail</span> Kontakta mig
           </HeroButton>

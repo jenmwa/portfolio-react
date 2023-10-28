@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FontHeading, grey100, grey700, primary3 } from "./variables";
+import { FontHeading, grey100, grey700, primary3, primary1 } from "./variables";
 
 export const SpanHeader = styled.span`
   color: ${grey100};
@@ -27,8 +27,8 @@ export const SpanHeading2 = styled.span`
   }
 `;
 
-export const SpanText = styled.span`
-  color: ${primary3};
+export const SpanTextLight = styled.span`
+  color: ${primary1};
   display: block;
   font-family: ${FontHeading};
   text-transform: uppercase;
@@ -40,8 +40,12 @@ export const SpanText = styled.span`
   }
 `;
 
-export const SpanIcon = styled.span`
+export const SpanTextDark = styled(SpanTextLight)`
   color: ${primary3};
+`;
+
+export const SpanIcon = styled.span`
+  color: ${primary1};
   display: block;
   font-size: 2rem;
 
