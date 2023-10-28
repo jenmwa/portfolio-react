@@ -335,22 +335,32 @@ Error generating stack: `+i.message+`
     text-shadow: none;
     font-size: 1.2rem;
   }
-`,R1=()=>{const e=Yo(),t=()=>{e("/about")};return v.jsx(v.Fragment,{children:v.jsxs(Zo,{children:[v.jsxs(Al,{children:[v.jsx(Br,{children:"Om Jenny"}),v.jsx("p",{children:"I'm Jenny, Nice to meet you! I’m a Front-End Developer Student at Medieinstitutet in Stockholm, Sweden and I really enjoy playing around with colors, fonts, images, taking photos, being creative, and make websites come to life with both design and functionality. Right now I’m looking for LIA for the fall 2023! I’m looking for a company where I will be a part of a team and where I could continue grow in my role as a Front-End developer."}),v.jsx("p",{children:"När jag inte är vid datorn så"}),v.jsx(Bu,{children:"WANT TO TALK? LET'S CONNECT!"}),"linkedIn symbol logoGithub logo logoemail symbol logo",v.jsx(Kt,{style:{marginTop:"2rem"},onClick:t,children:"Mer om jenny"})]}),v.jsxs($l,{children:[v.jsx(Jo,{}),v.jsx(Fl,{})]})]})})},ja=({handleClick:e})=>{const n=[{id:1,title:"Projekt 1"},{id:2,title:"Projekt 2"},{id:3,title:"Projekt 3"},{id:4,title:"Projekt 4"}].map(r=>v.jsxs("div",{className:"portfolio--img-container",onClick:()=>e(r.id),children:[v.jsx(v1,{}),v.jsx(Qh,{})]},r.id));return v.jsx(v.Fragment,{children:n})};const _1=()=>v.jsx(v.Fragment,{children:v.jsxs("div",{id:"my-btn-container",children:[v.jsxs(Kt,{style:{display:"inline"},className:"btn active",children:[" ","Visa alla"]}),v.jsxs(Kt,{style:{display:"inline"},className:"btn",children:[" ","Kod"]}),v.jsxs(Kt,{style:{display:"inline"},className:"btn",children:[" ","Grafiskt"]})]})}),Gh=()=>{const e=Yo(),t=n=>{console.log(),e(`/portfolio/${n}`)};return v.jsx(v.Fragment,{children:v.jsxs("section",{className:"portfolio-section",children:[v.jsx(Br,{children:"Portfolio"}),v.jsx(_1,{}),v.jsxs("div",{className:"portfolio-wrapper",children:[v.jsx(ja,{handleClick:t}),v.jsx(ja,{handleClick:t}),v.jsx(ja,{handleClick:t})]})]})})},N1=b.div`
-  /* margin-top: 0.9rem; */
-  margin-top: -5.9rem;
+`,R1=()=>{const e=Yo(),t=()=>{e("/about")};return v.jsx(v.Fragment,{children:v.jsxs(Zo,{children:[v.jsxs(Al,{children:[v.jsx(Br,{children:"Om Jenny"}),v.jsx("p",{children:"I'm Jenny, Nice to meet you! I’m a Front-End Developer Student at Medieinstitutet in Stockholm, Sweden and I really enjoy playing around with colors, fonts, images, taking photos, being creative, and make websites come to life with both design and functionality. Right now I’m looking for LIA for the fall 2024! I’m looking for a company where I will be a part of a team and where I could continue grow in my role as a Front-End Developer."}),v.jsx(Bu,{children:"WANT TO TALK? LET'S CONNECT!"}),"linkedIn symbol logoGithub logo logoemail symbol logo",v.jsx(Kt,{style:{marginTop:"2rem"},onClick:t,children:"Mer om jenny"})]}),v.jsxs($l,{children:[v.jsx(Jo,{}),v.jsx(Fl,{})]})]})})},ja=({handleClick:e})=>{const n=[{id:1,title:"Projekt 1"},{id:2,title:"Projekt 2"},{id:3,title:"Projekt 3"},{id:4,title:"Projekt 4"}].map(r=>v.jsxs("div",{className:"portfolio--img-container",onClick:()=>e(r.id),children:[v.jsx(v1,{}),v.jsx(Qh,{})]},r.id));return v.jsx(v.Fragment,{children:n})};const _1=()=>v.jsx(v.Fragment,{children:v.jsxs("div",{id:"my-btn-container",children:[v.jsxs(Kt,{style:{display:"inline"},className:"btn active",children:[" ","Visa alla"]}),v.jsxs(Kt,{style:{display:"inline"},className:"btn",children:[" ","Kod"]}),v.jsxs(Kt,{style:{display:"inline"},className:"btn",children:[" ","Grafiskt"]})]})}),Gh=()=>{const e=Yo(),t=n=>{console.log(),e(`/portfolio/${n}`)};return v.jsx(v.Fragment,{children:v.jsxs("section",{className:"portfolio-section",children:[v.jsx(Br,{children:"Portfolio"}),v.jsx(_1,{}),v.jsxs("div",{className:"portfolio-wrapper",children:[v.jsx(ja,{handleClick:t}),v.jsx(ja,{handleClick:t}),v.jsx(ja,{handleClick:t})]})]})})},N1=b.div`
+  margin-top: 0.9rem;
+  /* margin-top: -5.9rem; */
   position: relative;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   /* display: inline-block; */
+
+  @media (min-width: 1024px) {
+    margin-top: -5.9rem;
+    height: 100vh;
+  }
 `,j1=b.img`
   width: 100%;
-  height: 100%;
+  height: 90vh;
   display: block;
   object-fit: cover;
   object-position: top left;
 
   @media (min-width: 768px) {
     object-position: top center;
+    border-radius: 0 0 0 96px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-top: 5.9rem;
   }
 `,T1=b.div`
   position: absolute;
@@ -358,12 +368,12 @@ Error generating stack: `+i.message+`
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
 
   @media (min-width: 768px) {
     display: none;
   }
-`,L1="/portfolio-react/jenny-waller-cv-sv.jpg",D1=()=>{const e=Yo(),t=()=>{e("/about")};return v.jsx(v.Fragment,{children:v.jsxs(x1,{children:[v.jsxs(w1,{children:[v.jsx(k1,{children:"Hej Hej hallååå!"}),v.jsx(Na,{children:"Kul att just DU hittat hit!"}),v.jsxs(Na,{children:[v.jsx(C1,{children:"Jenny"})," heter jag,"]}),v.jsx(Na,{children:"Front-end-Developer in the makin'"}),v.jsx(P1,{className:"material-symbols-outlined",style:{display:"inline"},children:"home_pin"}),v.jsx(Bu,{style:{display:"inline"},children:"Karlstad"}),v.jsx(m1,{onClick:t,children:"Kontakta mig (öppnas i nytt fönster)"})]}),v.jsxs(N1,{children:[v.jsx(j1,{src:L1,alt:"en tjej som ler mot kameran"}),v.jsx(T1,{})]})]})})},O1=b.form`
+`,L1="/portfolio-react/jenny-waller-cv-sv.jpg",D1=()=>{const e=Yo(),t=()=>{e("/about")};return v.jsx(v.Fragment,{children:v.jsxs(x1,{children:[v.jsxs(w1,{children:[v.jsx(k1,{children:"Hej Hej hallååå!"}),v.jsxs(Na,{children:["Kul att just DU hittat hit!",v.jsx("span",{className:"material-symbols-outlined",children:"waving_hand"})]}),v.jsxs(Na,{children:[v.jsx(C1,{children:"Jenny"})," heter jag,"]}),v.jsx(Na,{children:"Front-end-Developer in the makin'"}),v.jsx(P1,{className:"material-symbols-outlined",style:{display:"inline"},children:"home_pin"}),v.jsx(Bu,{style:{display:"inline"},children:"Karlstad"}),v.jsxs(m1,{onClick:t,children:[v.jsx("span",{className:"material-symbols-outlined",children:"mail"})," Kontakta mig"]})]}),v.jsxs(N1,{children:[v.jsx(j1,{src:L1,alt:"en tjej som ler mot kameran"}),v.jsx(T1,{})]})]})})},O1=b.form`
   width: 350px;
   display: flex;
   flex-direction: column;
