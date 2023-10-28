@@ -18,7 +18,10 @@ export const Hero = () => {
       <Flex50percent>
         <TextContainer>
           <H1Light>Hej Hej hallååå!</H1Light>
-          <SpanHeader>Kul att just DU hittat hit!</SpanHeader>
+          <SpanHeader>
+            Kul att just DU hittat hit!
+            <span className="material-symbols-outlined">waving_hand</span>
+          </SpanHeader>
           <SpanHeader>
             <SpanHeading2>Jenny</SpanHeading2> heter jag,
           </SpanHeader>
@@ -31,7 +34,7 @@ export const Hero = () => {
           </SpanIcon>
           <SpanText style={{ display: "inline" }}>Karlstad</SpanText>
           <HeroButton onClick={goToAbout}>
-            Kontakta mig (öppnas i nytt fönster)
+            <span className="material-symbols-outlined">mail</span> Kontakta mig
           </HeroButton>
         </TextContainer>
         <ImageContainerFull>

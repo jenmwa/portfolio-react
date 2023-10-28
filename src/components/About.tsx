@@ -29,11 +29,10 @@ export const About = () => {
             Medieinstitutet in Stockholm, Sweden and I really enjoy playing
             around with colors, fonts, images, taking photos, being creative,
             and make websites come to life with both design and functionality.
-            Right now I’m looking for LIA for the fall 2023! I’m looking for a
+            Right now I’m looking for LIA for the fall 2024! I’m looking for a
             company where I will be a part of a team and where I could continue
-            grow in my role as a Front-End developer.
+            grow in my role as a Front-End Developer.
           </p>
-          <p>När jag inte är vid datorn så</p>
           <SpanText>WANT TO TALK? LET'S CONNECT!</SpanText>
           linkedIn symbol logoGithub logo logoemail symbol logo
           <Button style={{ marginTop: "2rem" }} onClick={goToAbout}>
