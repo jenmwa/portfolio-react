@@ -21,6 +21,15 @@ export const Section = styled.section`
   }
 `;
 
+export const SectionImgTextReverse = styled(Section)`
+  @media (min-width: 768px) {
+    flex-direction: row;
+
+    /* grid-template-columns: 1fr 1fr; */
+    /* gap: 50px; */
+  }
+`;
+
 export const SectionDark = styled(Section)`
   background-color: ${grey700};
   color: ${grey100};

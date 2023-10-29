@@ -9,6 +9,7 @@ import {
 import { H2 } from "./styled/Headings";
 import { Section } from "./styled/Sections";
 import { SpanTextDark } from "./styled/Texts";
+import { Socials } from "./Socials";
 
 export const About = () => {
   const navigate = useNavigate();
@@ -25,48 +26,21 @@ export const About = () => {
         <PContainer>
           <H2>Om Jenny</H2>
           <p>
-            I'm Jenny, Nice to meet you! I’m a Front-End Developer Student at
-            Medieinstitutet in Stockholm, Sweden and I really enjoy playing
-            around with colors, fonts, images, taking photos, being creative,
-            and make websites come to life with both design and functionality.
-            Right now I’m looking for LIA for the fall 2024! I’m looking for a
-            company where I will be a part of a team and where I could continue
-            grow in my role as a Front-End Developer.
+            Jenny, blivande Front-End Utvecklare som studerar via
+            MedieInstitutet i Stockholm. Klar med studierna juni 2024 men innan
+            dess ska jag ut på LIA!
           </p>
-          <SpanTextDark>WANT TO TALK? LET'S CONNECT!</SpanTextDark>
+          <p>
+            {" "}
+            Jag gillar att få webbapplikationer att komma till liv med både
+            design samt funktionalitet och med fokus på tillgänglighet. Jag
+            letar efter en företag där jag kommer att vara en del av ett team
+            och där jag skulle kunna fortsätta växa i min roll som Front-End
+            Utvecklare.
+          </p>
+          <SpanTextDark>Låt oss connecta och prata mer!</SpanTextDark>
 
-          <div className="icon-container">
-            <a href="https://www.linkedin.com/in/jenny-waller/" target="_blank">
-              <img
-                className="icons"
-                src="/linkedin-fill-svgrepo-com.svg"
-                alt="linkedIn symbol logo"
-                width="35"
-                height="35"
-              />
-            </a>
-            <a href="https://github.com/jenmwa" target="_blank">
-              <img
-                className="icons"
-                src="/github-svgrepo-com.svg"
-                alt="Github logo logo"
-                width="35"
-                height="35"
-              />
-            </a>
-            <a
-              href="mailto:jenny.waller@medieinstitutet.se?subject=Let's Connect!"
-              target="_blank"
-            >
-              <img
-                className="icons"
-                src="/email-svgrepo-com.svg"
-                alt="email symbol logo"
-                width="35"
-                height="35"
-              />
-            </a>
-          </div>
+          <Socials></Socials>
           <Button style={{ marginTop: "2rem" }} onClick={goToAbout}>
             Mer om jenny
           </Button>

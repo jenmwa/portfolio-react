@@ -30,7 +30,10 @@ export const Hero = () => {
           <SpanHeader>
             <SpanHeading2>Jenny</SpanHeading2> heter jag,
           </SpanHeader>
-          <SpanHeader>Front-end-Developer in the makin'</SpanHeader>
+          <SpanHeader>
+            Blivande <SpanHeading2>Front-End Utvecklare </SpanHeading2>som söker
+            <SpanHeading2> LIA</SpanHeading2>-plats Februari 2024
+          </SpanHeader>
           <SpanIcon
             className="material-symbols-outlined"
             style={{ display: "inline" }}

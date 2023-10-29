@@ -3,6 +3,7 @@ import {
   FontHeading,
   accent2,
   grey100,
+  grey300,
   grey700,
   grey800,
   primary2,
@@ -31,6 +32,17 @@ export const Button = styled.button`
   &:focus,
   &:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
+  }
+`;
+
+export const ButtonLight = styled(Button)`
+  background-color: ${grey100};
+  color: ${grey700};
+
+  &:hover {
+    background-color: ${grey300};
+    color: ${grey800};
+    font-weight: bolder;
   }
 `;
 
