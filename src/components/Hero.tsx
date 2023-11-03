@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import { HeroButton } from "./styled/Buttons";
 import { Flex50percent, TextContainer } from "./styled/Divs";
 import { H1Light } from "./styled/Headings";
@@ -12,10 +11,8 @@ import {
 import jenny from "/jenny-waller-cv-sv.jpg";
 
 export const Hero = () => {
-  const navigate = useNavigate();
-
-  const goToAbout = () => {
-    navigate("/about");
+  const emailJenny = () => {
+    (window.location.href = "mailto:hej@jenwaller.se"), "_blank";
   };
 
   return (
@@ -41,7 +38,7 @@ export const Hero = () => {
             home_pin
           </SpanIcon>
           <SpanTextLight style={{ display: "inline" }}>Karlstad</SpanTextLight>
-          <HeroButton onClick={goToAbout}>
+          <HeroButton onClick={emailJenny}>
             <span className="material-symbols-outlined">mail</span> Kontakta mig
           </HeroButton>
         </TextContainer>
