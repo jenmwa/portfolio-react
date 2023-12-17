@@ -1,4 +1,10 @@
 @import "../style/variables.scss";
+.knowledge {
+  @media (min-width: 768px) {
+    display: flex;
+    place-items: center;
+  }
+}
 
 .text-container {
   display: flex;

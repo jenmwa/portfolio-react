@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { grey100, grey700 } from "./variables";
 
 export const Section = styled.section`
-  min-height: 80dvh;
+  min-height: 75dvh;
   background-color: whitesmoke;
   margin: 0;
   position: relative;
@@ -10,6 +10,7 @@ export const Section = styled.section`
 
   @media (min-width: 768px) {
     display: flex;
+
     flex-direction: row-reverse;
     gap: 4rem;
     /* grid-template-columns: 1fr 1fr; */

@@ -53,9 +53,8 @@ export const AboutJenny = () => {
       <SectionDark className="aboutjennyrandom">
         <PContainer>
           <H2>Random</H2>
-          <ul style={{ listStyle: "inside" }}>
+          <ul>
             <li>Jag gillar kaffe. Massa.</li>
-            <li>Att stå i köket och laga mat är otroligt rofyllt.</li>
             <li>
               Jag älskar att vakna innan alla andra och bara mysa runt innan
               världen har vaknat.
@@ -67,10 +66,6 @@ export const AboutJenny = () => {
             <li>
               Jag tackar definitivt inte nej till lakrits. varesig söt eller
               salt.
-            </li>
-            <li>
-              Favoritfärg är definitvt grönt i (nästan) alla diverse olika
-              nyanser!
             </li>
             <li>Kvar på bucket-list att se live: Queen med Adam Lambert!</li>
             <li>

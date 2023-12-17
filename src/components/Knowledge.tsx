@@ -1,4 +1,3 @@
-import { ButtonLight } from "./styled/Buttons";
 import { ColorDiv, ContainerDiv, PContainer, WhiteDivBig } from "./styled/Divs";
 import { H2 } from "./styled/Headings";
 import { SectionDark } from "./styled/Sections";
@@ -49,7 +48,7 @@ export const Knowledge = () => {
             <ColorDiv></ColorDiv>
             <WhiteDivBig></WhiteDivBig>
           </ContainerDiv>
-          <ButtonLight>Ladda hem CV</ButtonLight>
+          <p>Ladda hem CV</p>
         </div>
       </SectionDark>
     </>
