@@ -31,7 +31,7 @@ export const Button = styled.button`
   }
   &:focus,
   &:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
+    border: 4px auto -webkit-focus-ring-color;
   }
 `;
 
@@ -57,7 +57,7 @@ export const HeroButton = styled(Button)`
   }
   &:focus,
   &:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
+    border: 4px auto -webkit-focus-ring-color;
   }
 
   @media (min-width: 768px) {
