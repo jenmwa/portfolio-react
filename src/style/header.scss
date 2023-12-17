@@ -13,7 +13,7 @@
 
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.7);
 
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -29,7 +29,7 @@
     position: fixed;
     left: -1rem;
     top: 5.9rem;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.7);
 
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
@@ -52,6 +52,9 @@ ul {
   padding: 0;
 
   list-style: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: $FontHeading;
 
   li {
     margin-bottom: 1rem;

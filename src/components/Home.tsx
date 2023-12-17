@@ -2,7 +2,7 @@ import { About } from "./About";
 import { Portfolio } from "./Portfolio";
 
 import { Hero } from "./Hero";
-import { Contact } from "./Contact";
+import { ContactSimple } from "./ContactSimple";
 import { Knowledge } from "./Knowledge";
 import { Inspiration } from "./Inspiration";
 
@@ -16,7 +16,7 @@ export const Home = () => {
       <Knowledge></Knowledge>
       <Portfolio></Portfolio>
       <Inspiration></Inspiration>
-      <Contact></Contact>
+      <ContactSimple></ContactSimple>
     </>
   );
 };

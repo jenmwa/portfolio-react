@@ -15,6 +15,13 @@ export const Button = ({ click, children }: IClickProps) => {
         style={{
           backgroundColor: currentTheme.backgroundColor,
           color: currentTheme.color,
+          borderRadius: "24px 0 24px 0",
+          border: "1px solid transparent",
+          padding: "0.9em 1.6em",
+          fontWeight: "500",
+          cursor: "pointer",
+          transition: "border-color 0.25s",
+          marginTop: "2rem",
         }}
         className="material-symbols-outlined"
         onClick={click}

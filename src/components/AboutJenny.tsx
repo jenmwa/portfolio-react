@@ -1,24 +1,24 @@
-import { SpanTextDark } from "./styled/Texts";
+import { SpanTextDark2, SpanTextDark } from "./styled/Texts";
 import {
   PContainer,
   ContainerDiv,
   ColorDiv,
-  PlacementDiv,
-  WhiteDivBig,
+  PlacementDivJenny,
+  WhiteDivBigAbout,
 } from "./styled/Divs";
-import { H2 } from "./styled/Headings";
+import { H2, H3 } from "./styled/Headings";
 import { Section, SectionDark, SectionImgTextReverse } from "./styled/Sections";
-import { Button, ButtonLight } from "./styled/Buttons";
+import { Button } from "./styled/Buttons";
 import { Socials } from "./Socials";
 
 export const AboutJenny = () => {
   const emailJenny = () => {
-    (window.location.href = "mailto:hej@jenwaller.se"), "_blank";
+    (window.location.href = "mailto:jenny.waller@medieinstitutet.se"), "_blank";
   };
 
   return (
     <>
-      <Section>
+      <Section className="aboutJenny">
         <PContainer>
           <H2>Vem?</H2>
           {/* <p>
@@ -40,20 +40,20 @@ export const AboutJenny = () => {
           </p>
           <SpanTextDark>Låt oss connecta och prata mer!</SpanTextDark>
 
-          <Socials></Socials>
+          <Socials iconColor="#2a2e45"></Socials>
           <Button style={{ marginTop: "2rem" }} onClick={emailJenny}>
             Kontakta mig
           </Button>
         </PContainer>
         <ContainerDiv>
           <ColorDiv></ColorDiv>
-          <PlacementDiv></PlacementDiv>
+          <PlacementDivJenny></PlacementDivJenny>
         </ContainerDiv>
       </Section>
       <SectionDark>
         <PContainer>
           <H2>Random</H2>
-          <ul>
+          <ul style={{ listStyle: "inside" }}>
             <li>Jag gillar kaffe. Massa.</li>
             <li>Att stå i köket och laga mat är otroligt rofyllt.</li>
             <li>
@@ -80,41 +80,49 @@ export const AboutJenny = () => {
             <li> Jag tycker det på riktigt är skittråkigt att diska.</li>
           </ul>
         </PContainer>
-        <div className="knowledge-cv-container">
+        <div className="knowledge-cv-container" style={{ marginTop: "0" }}>
           <ContainerDiv>
             <ColorDiv></ColorDiv>
-            <WhiteDivBig></WhiteDivBig>
+            <WhiteDivBigAbout></WhiteDivBigAbout>
           </ContainerDiv>
-          <ButtonLight>Bildspel allt som är gött</ButtonLight>
+          {/* <ButtonLight>Bildspel allt som är gött</ButtonLight> */}
         </div>
       </SectionDark>
 
       <SectionImgTextReverse>
         <PContainer>
           <H2>5 snabba:</H2>
-          {/* <p>
-            Om jag skulle sammanfatta mig själv i 3 ord?<br></br>
-            Värmlänning, mediavetare och lakritsälskare!
-          </p> */}
-          <p>React vs Vue</p>
-          <p>Jobbar helst med:</p>
-          <p>Skulle vilja testa på</p>
-          <p>Roliagst jag gjort?</p>
-          <p>Drömprojekt</p>
-          <Button style={{ marginTop: "2rem" }} onClick={emailJenny}>
-            Kontakta mig
-          </Button>
+
+          <p>
+            <SpanTextDark2>React</SpanTextDark2> vs{" "}
+            <SpanTextDark2>Vue</SpanTextDark2>
+          </p>
+          <p>
+            Solsemester eller <SpanTextDark2>Stadssemester</SpanTextDark2>
+          </p>
+          <p>
+            <SpanTextDark2>Morgon</SpanTextDark2> eller Kväll
+          </p>
+          <p>
+            Bootstrap eller <SpanTextDark2>Tailwind</SpanTextDark2>
+          </p>
+          <p>
+            <SpanTextDark2>Kaffe</SpanTextDark2> eller te
+          </p>
         </PContainer>
 
         <PContainer>
-          <h4>Kontakt</h4>
+          <H3 style={{ marginTop: "3.2rem" }}>Kontakt</H3>
           <p>
-            som så många andra hänger jag lite varstans online, här hittar ni
+            Som så många andra hänger jag lite varstans online, här hittar ni
             mig :)
           </p>
           <SpanTextDark>Låt oss connecta och prata mer!</SpanTextDark>
 
-          <Socials></Socials>
+          <Socials iconColor="#2a2e45"></Socials>
+          <Button style={{ marginTop: "2rem" }} onClick={emailJenny}>
+            Kontakta mig
+          </Button>
         </PContainer>
       </SectionImgTextReverse>
     </>

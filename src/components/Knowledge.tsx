@@ -7,7 +7,7 @@ import "../style/_knowledge.scss";
 export const Knowledge = () => {
   return (
     <>
-      <SectionDark>
+      <SectionDark className="knowledge">
         <PContainer>
           <H2 style={{ marginBottom: "0rem" }}>Kunskaper</H2>
           <div className="text-container">
@@ -45,7 +45,7 @@ export const Knowledge = () => {
           <p>Vite, VS Code, Git, Axios, Nodejs, Parcel, Jest, Cypress</p> */}
         </PContainer>
         <div className="knowledge-cv-container">
-          <ContainerDiv>
+          <ContainerDiv style={{ marginTop: "0" }}>
             <ColorDiv></ColorDiv>
             <WhiteDivBig></WhiteDivBig>
           </ContainerDiv>

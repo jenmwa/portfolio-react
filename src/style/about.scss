@@ -1,2 +1,11 @@
+.icons {
+  transition: transform 0.3s ease-in-out;
+}
 
+.icons:hover {
+  transform: scale(1.1);
+}
 
+.light.icons {
+  color: whitesmoke;
+}

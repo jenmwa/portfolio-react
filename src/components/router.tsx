@@ -2,7 +2,7 @@ import { createHashRouter } from "react-router-dom";
 import { Layout } from "./Layout";
 import { Home } from "./Home";
 import { Portfolio } from "./Portfolio";
-import { Contact } from "./Contact";
+import { ContactSimple } from "./ContactSimple";
 import { Project } from "./Project";
 import { AboutJenny } from "./AboutJenny";
 
@@ -31,7 +31,7 @@ export const router = createHashRouter([
       },
       {
         path: "/contact",
-        element: <Contact></Contact>,
+        element: <ContactSimple></ContactSimple>,
       },
     ],
   },

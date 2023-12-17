@@ -1,5 +1,9 @@
 import styled from "styled-components";
-import placeholder from "/placeholder.webp";
+import jennyWaller from "/jenmwa2.webp";
+import CV from "/CV.webp";
+import inspo from "/inspo.webp";
+import jenny from "/jenmwa3.webp";
+import konsert from "/konsert.webp";
 import { grey100, grey700 } from "./variables";
 
 export const ContainerDiv = styled.div`
@@ -11,6 +15,10 @@ export const ContainerDiv = styled.div`
 
   @media (min-width: 768px) {
     margin: 8rem auto 0 auto;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 5rem auto 0 auto;
   }
 `;
 
@@ -48,7 +56,7 @@ export const PlacementDiv = styled.div`
   width: 320px;
   height: 320px;
   border-radius: 125px 0 125px 0;
-  background-image: url(${placeholder});
+  background-image: url(${jennyWaller});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -66,6 +74,14 @@ export const PlacementDiv = styled.div`
   }
 `;
 
+export const PlacementDivInspiration = styled(PlacementDiv)`
+  background-image: url(${inspo});
+`;
+
+export const PlacementDivJenny = styled(PlacementDiv)`
+  background-image: url(${jenny});
+`;
+
 export const WhiteDiv = styled(PlacementDiv)`
   background: ${grey100};
   width: 300px;
@@ -75,12 +91,19 @@ export const WhiteDiv = styled(PlacementDiv)`
 export const WhiteDivBig = styled(WhiteDiv)`
   width: 325px;
   height: 325px;
+  background-image: url(${CV});
+  background-size: cover;
+`;
+
+export const WhiteDivBigAbout = styled(WhiteDivBig)`
+  background-image: url(${konsert});
 `;
 
 export const Flex50percent = styled.div`
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
     /* gap: 50px; */
   }
 `;

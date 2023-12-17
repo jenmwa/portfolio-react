@@ -22,7 +22,7 @@ export const About = () => {
 
   return (
     <>
-      <Section>
+      <Section className="about">
         <PContainer>
           <H2>Om Jenny</H2>
           <p>
@@ -40,7 +40,7 @@ export const About = () => {
           </p>
           <SpanTextDark>Låt oss connecta och prata mer!</SpanTextDark>
 
-          <Socials></Socials>
+          <Socials iconColor="#2a2e45"></Socials>
           <Button style={{ marginTop: "2rem" }} onClick={goToAbout}>
             Mer om jenny
           </Button>

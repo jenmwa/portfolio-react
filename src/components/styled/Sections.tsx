@@ -24,6 +24,7 @@ export const Section = styled.section`
 export const SectionImgTextReverse = styled(Section)`
   @media (min-width: 768px) {
     flex-direction: row;
+    min-height: 50dvh;
 
     /* grid-template-columns: 1fr 1fr; */
     /* gap: 50px; */

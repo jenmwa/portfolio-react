@@ -44,6 +44,11 @@ export const SpanTextDark = styled(SpanTextLight)`
   color: ${primary3};
 `;
 
+export const SpanTextDark2 = styled(SpanTextLight)`
+  color: ${grey700};
+  display: inline;
+`;
+
 export const SpanIcon = styled.span`
   color: ${primary1};
   display: block;

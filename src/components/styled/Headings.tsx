@@ -14,6 +14,13 @@ export const H2 = styled.h2`
   font-size: 4rem;
 `;
 
+export const H3 = styled.h3`
+  margin-top: 0;
+  font-family: ${FontHeading};
+  text-transform: uppercase;
+  font-size: 3%.5;
+`;
+
 export const H1Light = styled(H1).attrs({
   className: "breakpoint_small",
 })`

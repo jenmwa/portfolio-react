@@ -2,7 +2,7 @@ import {
   ColorDiv,
   ContainerDiv,
   PContainer,
-  PlacementDiv,
+  PlacementDivInspiration,
 } from "./styled/Divs";
 import { H2 } from "./styled/Headings";
 import { Section } from "./styled/Sections";
@@ -10,22 +10,27 @@ import { Section } from "./styled/Sections";
 export const Inspiration = () => {
   return (
     <>
-      <Section>
+      <Section className="inspiration">
         <PContainer>
-          <H2>Inspiration</H2>
+          <H2>Om</H2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            När jag inte pluggar så går jag gärna på konserter, och när ny
+            portfolio skulle skapas så vart det dessa som inspirerade till färg
+            & form.
+            <br></br>
+            Jag ville använda React då det har varit den största delen av våra
+            kursen 2023, men att sätta det i kontext med något eget. Använt Vite
+            som bundler, React med Typescript som ramverk, använt EsLint samt
+            prettier som linting & formatteringspaket.<br></br>
+            Och även använt en del styled components och kompletterat med Sass.
+            <br></br>
+            En lite over-the-top sajt med färg och form, men där jag kunnat
+            testa och experimenterat med Reacts egenskaper.
           </p>
         </PContainer>
         <ContainerDiv>
           <ColorDiv></ColorDiv>
-          <PlacementDiv></PlacementDiv>
+          <PlacementDivInspiration></PlacementDivInspiration>
         </ContainerDiv>
       </Section>
     </>

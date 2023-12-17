@@ -20,9 +20,19 @@ export const Hero = () => {
       <Flex50percent>
         <TextContainer>
           <H1Light>Hej Hej hallååå!</H1Light>
-          <SpanHeader>
+          <SpanHeader
+            style={{
+              display: "flex",
+              alignItems: "end",
+            }}
+          >
             Kul att just DU hittat hit!
-            <span className="material-symbols-outlined">waving_hand</span>
+            <span
+              className="material-symbols-outlined"
+              style={{ fontSize: "4rem" }}
+            >
+              waving_hand
+            </span>
           </SpanHeader>
           <SpanHeader>
             <SpanHeading2>Jenny</SpanHeading2> heter jag,
@@ -31,15 +41,38 @@ export const Hero = () => {
             Blivande <SpanHeading2>Front-End Utvecklare </SpanHeading2>som söker
             <SpanHeading2> LIA</SpanHeading2>-plats Februari 2024
           </SpanHeader>
-          <SpanIcon
-            className="material-symbols-outlined"
-            style={{ display: "inline" }}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+            }}
           >
-            home_pin
-          </SpanIcon>
-          <SpanTextLight style={{ display: "inline" }}>Karlstad</SpanTextLight>
-          <HeroButton onClick={emailJenny}>
-            <span className="material-symbols-outlined">mail</span> Kontakta mig
+            <SpanIcon
+              className="material-symbols-outlined"
+              style={{ display: "inline", fontSize: "2rem" }}
+            >
+              home_pin
+            </SpanIcon>
+
+            <SpanTextLight style={{ display: "inline" }}>
+              Karlstad
+            </SpanTextLight>
+          </div>
+          <HeroButton
+            onClick={emailJenny}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <span
+              className="material-symbols-outlined"
+              style={{ marginRight: "0.5rem" }}
+            >
+              mail
+            </span>{" "}
+            Kontakta mig
           </HeroButton>
         </TextContainer>
         <ImageContainerFull>
