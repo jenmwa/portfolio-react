@@ -13,7 +13,7 @@ export const Inspiration = () => {
     <>
       <Section className="inspiration">
         <PContainer>
-          <H2>Om</H2>
+          <H2>Denna sida</H2>
           <p>
             Jag ville använda React då det har varit den största delen av våra
             kursen 2023, men att sätta det i kontext med något eget. Använt Vite
