@@ -10,18 +10,22 @@ export const ImgContainer = ({ handleClick }: IImgContainerProps) => {
     {
       id: 1,
       title: "Projekt 1",
+      github: "",
     },
     {
       id: 2,
       title: "Projekt 2",
+      github: "https://",
     },
     {
       id: 3,
       title: "Projekt 3",
+      github: "",
     },
     {
       id: 4,
       title: "Projekt 4",
+      github: "",
     },
   ];
 

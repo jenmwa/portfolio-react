@@ -4,7 +4,7 @@ import { H2 } from "./styled/Headings";
 import { ImgContainer } from "./ImgContainer";
 import "../style/_portfolio.scss";
 import { useNavigate } from "react-router-dom";
-import { PortfolioFilterSection } from "./PortfolioFilterSection";
+// import { PortfolioFilterSection } from "./PortfolioFilterSection";
 
 export const Portfolio = () => {
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ export const Portfolio = () => {
     <>
       <section className="portfolio-section">
         <H2>Portfolio</H2>
-        <PortfolioFilterSection></PortfolioFilterSection>
+        {/* <PortfolioFilterSection></PortfolioFilterSection> */}
         <div className="portfolio-wrapper">
           <ImgContainer handleClick={handleClick}></ImgContainer>
           <ImgContainer handleClick={handleClick}></ImgContainer>

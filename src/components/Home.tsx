@@ -7,8 +7,6 @@ import { Knowledge } from "./Knowledge";
 import { Inspiration } from "./Inspiration";
 
 export const Home = () => {
-  console.log("Hi there!");
-
   return (
     <>
       <Hero></Hero>

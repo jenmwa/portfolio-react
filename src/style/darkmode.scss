@@ -57,7 +57,7 @@ main.darkMode {
       background-color: $grey100;
       color: $grey700;
       border: 2px solid $primary1;
-      font-style: bold;
+      font-weight: bold;
     }
   }
 
@@ -68,9 +68,36 @@ main.darkMode {
     background-color: $grey700;
     color: $grey700;
   }
-}
 
-footer.darkMode {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
-  //   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), $grey700;
+  .aboutJenny {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
+
+    button {
+      background-color: $grey100;
+      color: $grey700;
+      border: 2px solid $primary1;
+      font-weight: bold;
+    }
+    svg {
+      fill: $primary1;
+    }
+  }
+  .random {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
+
+    h3 {
+      color: $grey100;
+    }
+
+    svg {
+      fill: $primary1;
+    }
+
+    button {
+      background-color: $grey100;
+      color: $grey700;
+      border: 2px solid $primary1;
+      font-weight: bold;
+    }
+  }
 }

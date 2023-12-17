@@ -24,7 +24,7 @@ export const StyledInput = styled.input`
   background-color: ${grey100};
   padding: 1rem;
   border: none;
-  outline: none;
+  /* outline: none; */
 
   &[type="email"] {
     width: 100%;
@@ -33,7 +33,7 @@ export const StyledInput = styled.input`
     color: ${grey700};
     padding: 1rem;
     border: none;
-    outline: none;
+    /* outline: none; */
   }
 `;
 
@@ -45,5 +45,5 @@ export const Textarea = styled.textarea`
   background-color: ${grey100};
   padding: 1rem;
   border: none;
-  outline: none;
+  /* outline: none; */
 `;

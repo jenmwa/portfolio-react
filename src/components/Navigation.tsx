@@ -87,12 +87,12 @@ export const Navigation = ({ click }: IClickProps) => {
               <ul className="menu-list">
                 <li>
                   <Link to="/" onClick={closeMenu}>
-                    Home
+                    Hem
                   </Link>
                 </li>
                 <li>
                   <Link to="/about" onClick={closeMenu}>
-                    About
+                    Om
                   </Link>
                 </li>
                 <li>
@@ -102,7 +102,7 @@ export const Navigation = ({ click }: IClickProps) => {
                 </li>
                 <li>
                   <Link to="/contact" onClick={closeMenu}>
-                    Contact
+                    Kontakt
                   </Link>
                 </li>
                 <li>

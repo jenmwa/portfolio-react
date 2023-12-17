@@ -1,4 +1,5 @@
 export interface IPortfolioProject {
   id: number,
-  title: string
+  title: string,
+  github: string,
 }

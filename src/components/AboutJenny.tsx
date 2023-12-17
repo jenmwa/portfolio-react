@@ -50,7 +50,7 @@ export const AboutJenny = () => {
           <PlacementDivJenny></PlacementDivJenny>
         </ContainerDiv>
       </Section>
-      <SectionDark>
+      <SectionDark className="aboutjennyrandom">
         <PContainer>
           <H2>Random</H2>
           <ul style={{ listStyle: "inside" }}>
@@ -89,7 +89,7 @@ export const AboutJenny = () => {
         </div>
       </SectionDark>
 
-      <SectionImgTextReverse>
+      <SectionImgTextReverse className="random">
         <PContainer>
           <H2>5 snabba:</H2>
 
