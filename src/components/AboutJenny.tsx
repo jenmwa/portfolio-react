@@ -29,14 +29,15 @@ export const AboutJenny = () => {
             Kommer ursprungligen från Hammarö, och efter några år med plugg
             utomsocknes fann jag mig tillbaka i Värmland och har stannat i
             Karlstad sen dess.<br></br>
-            Gillar kod, färg och kommunikation, och hittade till front-end under
-            pandemin... Sagt och gjort, ingenting är omöjligt och nu är jag
-            snart färdig frontendare efter Medieinstitutets YH-utbildning!
+            Gillar kod, färg och kommunikation, och hittade till
+            frontendutveckling under pandemin... Sagt och gjort, ingenting är
+            omöjligt och nu är jag snart färdig frontendare efter
+            Medieinstitutets YH-utbildning!
           </p>
           <p>
-            När jag inte sitter med datorn så lagar jag gärna mat, ute i skog
-            och mark, lyssnar på musik och åker gärna Sverige runt för konserter
-            så fort jag får möjlighet!
+            När jag inte sitter med datorn så lagar jag gärna mat, är ute i skog
+            och mark och åker gärna Sverige runt för konserter så fort jag får
+            möjlighet!
           </p>
           <SpanTextDark>Låt oss connecta och prata mer!</SpanTextDark>
 
@@ -64,7 +65,7 @@ export const AboutJenny = () => {
               i.
             </li>
             <li>
-              Jag tackar definitivt inte nej till lakrits. varesig söt eller
+              Jag tackar definitivt inte nej till lakrits! Varesig söt eller
               salt.
             </li>
             <li>Kvar på bucket-list att se live: Queen med Adam Lambert!</li>

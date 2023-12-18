@@ -16,7 +16,7 @@ export const Inspiration = () => {
           <H2>Denna sida</H2>
           <p>
             Jag ville använda React då det har varit den största delen av våra
-            kursen 2023, men att sätta det i kontext med något eget. Använt Vite
+            kurser 2023, men att sätta det i kontext med något eget. Använt Vite
             som bundler, React med Typescript som ramverk, använt EsLint samt
             prettier som linting & formatteringspaket.<br></br>
             Och även använt en del styled components och kompletterat med Sass.

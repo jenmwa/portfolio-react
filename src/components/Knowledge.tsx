@@ -3,19 +3,8 @@ import { H2 } from "./styled/Headings";
 import { SectionDark } from "./styled/Sections";
 import "../style/_knowledge.scss";
 import cvPdf from "/CV lia_2024-jenny-waller.pdf";
-import { useState } from "react";
 
 export const Knowledge = () => {
-  const [isHovering, setIsHovering] = useState(false);
-
-  const handleMouseOver = () => {
-    setIsHovering(true);
-  };
-
-  const handleMouseOut = () => {
-    setIsHovering(false);
-  };
-
   const handleCV = () => {
     console.log("open in new window");
     window.open(cvPdf, "_blank");
@@ -44,45 +33,15 @@ export const Knowledge = () => {
               MongoDB, Postman
             </span>
           </div>
-          {/* <H2>Kunskaper</H2>
-          <ul>
-            <li>HTML</li>
-            <li>CSS/SCSS</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>NextJs</li>
-            <li>Vue</li>
-            <li>Figma</li>
-            <li>
-              Adobe<br></br>(Photoshop, Illustrator, InDesign, AfterEffects)
-            </li>
-          </ul>
-          <p>Vite, VS Code, Git, Axios, Nodejs, Parcel, Jest, Cypress</p> */}
         </PContainer>
         <div className="knowledge-cv-container">
           <ContainerDiv
             style={{ marginTop: "0", cursor: "pointer" }}
             onClick={handleCV}
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
           >
             <ColorDiv></ColorDiv>
             <WhiteDivBig></WhiteDivBig>
           </ContainerDiv>
-          {isHovering && (
-            <div
-              style={{
-                backgroundColor: "whitesmoke",
-                borderRadius: "24px 0 24px 0",
-                color: "darkslategrey",
-                position: "absolute",
-                paddingInline: "0.9em",
-              }}
-            >
-              <p>Öppnas i nytt fönster</p>
-            </div>
-          )}
           <a
             href={cvPdf}
             download={"CV lia_2024-jenny-waller.pdf"}
