@@ -41,7 +41,6 @@ export const Navigation = ({ click }: IClickProps) => {
     setIsOpen: setIsOpen,
     onClickOutside: () => {
       closeMenu();
-      // console.log("click outside");
     },
   });
 

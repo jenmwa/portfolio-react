@@ -1,7 +1,7 @@
 @import "../style/variables.scss";
 @import "../style/darkmode.scss";
 
-.header {
+header {
   left: 0;
   top: 0;
   width: 100vw;
@@ -29,6 +29,7 @@
     position: fixed;
     left: -1rem;
     top: 5.9rem;
+    z-index: 10;
     background: rgba(255, 255, 255, 0.7);
 
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -47,6 +48,10 @@
   }
 }
 
+a {
+  color: $grey700;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -58,27 +63,28 @@ ul {
 
   li {
     margin-bottom: 1rem;
+    color: $grey700;
   }
 }
 
 .menu-slide-enter {
   opacity: 0;
-  transform: translateX(-100%);
+  transform: translateY(-100%);
 }
 
 .menu-slide-enter-active {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
   transition: opacity 300ms, transform 300ms;
 }
 
 .menu-slide-exit {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 .menu-slide-exit-active {
   opacity: 0;
-  transform: translateX(-100%);
+  transform: translateY(-100%);
   transition: opacity 300ms, transform 300ms;
 }

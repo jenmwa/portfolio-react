@@ -33,8 +33,8 @@ export const About = () => {
           <p>
             {" "}
             Vad jag gillar med frontend-utveckling är just balansen mellan
-            logiken, designkreativitet och att vara användarcentreradför att
-            skapa webbgränssnitt som inte bara är effektiva och robusta utan
+            logiken, designkreativitet och att vara användarcentrerad för att
+            skapa webbgränssnitt som inte bara är effektiva och stabila utan
             också tilltalande för användarna. Jag letar efter ett företag där
             jag kommer att vara en del av ett team och där jag skulle kunna
             fortsätta växa i min roll som Frontendutvecklare.
