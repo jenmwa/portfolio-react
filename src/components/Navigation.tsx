@@ -68,7 +68,6 @@ export const Navigation = ({ click }: IClickProps) => {
           handleKeyEnter={handleKeyEnter}
           isOpen={isOpen}
         ></BurgerMeny>
-
         <CSSTransition
           in={isOpen}
           // nodeRef={nodeRef}
