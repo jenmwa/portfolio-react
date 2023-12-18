@@ -195,6 +195,7 @@ Error generating stack: `+i.message+`
 `,Ty=G(bh)`
   background-image: url(${Ry});
 `,Ly=G.div`
+  margin-inline: 0;
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -277,6 +278,7 @@ Error generating stack: `+i.message+`
   font-size: 4.7rem;
   line-height: 1.2;
   margin-bottom: 1rem;
+  margin-inline: 0;
 
   @media (min-width: 768px) {
     color: ${tt};
