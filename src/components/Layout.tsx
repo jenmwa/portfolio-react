@@ -19,7 +19,10 @@ export const Layout = () => {
     <>
       <darkModeContext.Provider value={{ darkMode, toggleDarkMode }}>
         {/* <div className={darkMode ? 'darkMode' : ''}> */}
-        <header className={darkMode ? "darkMode" : ""}>
+        <header
+          className={darkMode ? "darkMode" : ""}
+          style={{ width: "100%" }}
+        >
           <Navigation click={toggleDarkMode}></Navigation>
         </header>
         <main className={darkMode ? "darkMode" : ""}>

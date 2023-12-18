@@ -5,7 +5,7 @@ export const ImageContainerFull = styled.div`
   /* margin-top: -5.9rem; */
   position: relative;
   height: 90vh;
-  width: 100%;
+  /* width: 100%; */
   /* display: inline-block; */
 
   @media (min-width: 1024px) {
