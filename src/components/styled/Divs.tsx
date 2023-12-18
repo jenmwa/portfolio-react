@@ -100,6 +100,7 @@ export const WhiteDivBigAbout = styled(WhiteDivBig)`
 `;
 
 export const Flex50percent = styled.div`
+  margin-inline: 0;
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
