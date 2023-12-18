@@ -18,7 +18,7 @@ export const Hero = () => {
   return (
     <>
       <Flex50percent>
-        <TextContainer>
+        <TextContainer style={{ maxWidth: "100%" }}>
           <H1Light>Hej Hej hallååå!</H1Light>
           <SpanHeader
             style={{
