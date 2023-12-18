@@ -83,7 +83,7 @@ export const Navigation = ({ click }: IClickProps) => {
           <ThemeContext.Provider value={theme}>
             <div className={"menu-div"}>
               <ul className="menu-list">
-                <li>
+                <li className="menu-listitem">
                   <Link to="/" onClick={closeMenu}>
                     Hem
                   </Link>
