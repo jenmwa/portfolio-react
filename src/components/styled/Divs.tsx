@@ -115,7 +115,7 @@ export const TextContainer = styled.div`
   /* top: 80%;
   left: 40%; */
   top: 65%;
-  left: 200px;
+  left: 45%;
   transform: translate(-50%, -50%);
   width: 340px;
 
